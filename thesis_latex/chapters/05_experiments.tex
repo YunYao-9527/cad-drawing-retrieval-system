@@ -1,0 +1,207 @@
+\chapter{实验设计与结果分析}
+
+为了客观评估本文所提出双主线方法的有效性，本章围绕数据集设置、评价指标、实验方案与结果分析展开论述。与早期基于小规模测试集的验证不同，本文正式实验全部建立在清理后的大规模数据集之上，并采用离线模式对齐评测，确保图库特征与查询特征在同一模式下生成，从而提高实验结论的可信度与答辩时的说服力。
+
+\section{实验环境与数据集设置}
+
+本文实验环境为 Windows + Python 3.10，特征提取与模型推理在 CUDA 设备上完成，视觉编码主干采用微调后的 CLIP 检索模型，向量索引部分使用 Qdrant 完成图库构建。本文正式实验不再采用旧版约 2454 张图纸的小规模测试集，而是全部切换至清理后的 \texttt{Dataset\_img3} 数据集。
+
+新的正式数据集具有以下特点：
+\begin{enumerate}
+  \item 图库规模为 13880 张 PNG 工程图纸；
+  \item 数据覆盖 22 个类别；
+  \item 原始 DWG 转 PNG 过程中产生的黑底、黑边和截图边框干扰已被统一清理；
+  \item 为避免“图库特征与查询模式不一致”带来的评估偏差，本文采用离线模式对齐评测，即在每种模式下分别对图库和查询图纸提取对应特征，再统一计算检索指标。
+\end{enumerate}
+
+在正式评测阶段，本文采用按类别均衡抽样策略，每类最多选取 20 张图纸作为查询样本，共得到 440 个正式查询。为了保证前列排序与深度排序指标都具有可比性，本文设置 Top-$K=10$，并在评测中额外采用 depth$=1000$ 的候选深度用于 FT、ST 和 ANMRR 计算。
+
+\section{评价指标}
+
+本文采用 Recall@K、mAP@10、nDCG@10、First Tier（FT）、Second Tier（ST）和 ANMRR 作为评价指标。设查询样本对应的相关集合为 $R_q$，前 $K$ 个检索结果为 $\mathcal{L}_q^K$，则 Recall@K 定义为
+\begin{equation}
+  \text{Recall@}K = \frac{1}{|\mathcal{Q}|}\sum_{q\in\mathcal{Q}} \mathbf{1}\!\left(\mathcal{L}_q^K \cap R_q \neq \emptyset\right).
+\end{equation}
+
+平均精度定义为
+\begin{equation}
+  AP@K(q)=\frac{1}{|R_q|}\sum_{k=1}^{K} P_q(k)\cdot rel_q(k),
+\end{equation}
+对所有查询取平均可得 mAP@10。
+
+nDCG@10 反映前列排序质量，其定义为
+\begin{equation}
+  DCG@K = \sum_{k=1}^{K}\frac{2^{rel_q(k)}-1}{\log_2(k+1)},\qquad
+  nDCG@K = \frac{DCG@K}{IDCG@K}.
+\end{equation}
+
+FT 和 ST 分别用于衡量类别规模相关深度下的召回能力，ANMRR 用于衡量相关样本整体排序位置，其值越小表示整体排序越优。由于工程图纸检索不仅关注 Top-1 命中，还关注前列候选的整体可用性，因此本文同时保留 Recall、mAP、nDCG 和 ANMRR 等多种指标。
+
+\section{双主线实验设计}
+
+与旧版“五阶段串行消融”不同，本文正式实验按两条主线组织：
+\begin{enumerate}
+  \item \textbf{YOLO 清洗路线}：包含 \texttt{baseline}、\texttt{cleaning\_only}、\texttt{masked\_pooling}、\texttt{full\_model} 和 \texttt{multimodal\_text} 五种模式；
+  \item \textbf{无清洗注意力路线}：包含 \texttt{baseline}、\texttt{attention\_visual}、\texttt{attention\_structure} 和 \texttt{attention\_multimodal} 四种模式。
+\end{enumerate}
+
+其中：
+\begin{enumerate}
+  \item \texttt{baseline} 表示仅使用 CLIP 视觉语义相似度；
+  \item \texttt{cleaning\_only} 表示仅执行 YOLO 清洗；
+  \item \texttt{masked\_pooling} 表示在清洗路线中加入掩码引导的局部视觉增强；
+  \item \texttt{full\_model} 表示在清洗路线中进一步加入结构重排序；
+  \item \texttt{multimodal\_text} 表示在清洗路线中进一步加入 OCR 辅助检索；
+  \item \texttt{attention\_visual} 表示不执行 YOLO 清洗，直接使用无清洗注意力式视觉增强；
+  \item \texttt{attention\_structure} 表示在无清洗注意力路线中加入结构重排序；
+  \item \texttt{attention\_multimodal} 表示在无清洗注意力路线中进一步加入 OCR 辅助检索。
+\end{enumerate}
+
+需要指出的是，当前“注意力路线”采用的是可运行的掩码引导聚合方案，用于验证无清洗主体增强思路；本文并未额外训练独立的 \texttt{spatial\_attention} 新模型。因此，实验结论针对的是“无清洗注意力式增强路线”的有效性，而非新权重模型本身。
+
+\section{正式实验结果}
+
+\subsection{8 组模式总体结果}
+
+8 个模式的总体结果如\cref{tab:all-eight-modes}所示。
+
+\begin{table}[htbp]
+  \centering
+  \caption{双主线 8 组正式实验结果}
+  \label{tab:all-eight-modes}
+  \begin{adjustbox}{width=\textwidth}
+    \small
+    \setlength{\tabcolsep}{3.5pt}
+    \begin{tabular}{p{4.4cm}cccccccc}
+      \toprule
+      方法 & Recall@1 & Recall@5 & Recall@10 & mAP@10 & nDCG@10 & FT & ST & ANMRR \\
+      \midrule
+      Baseline & 0.8682 & 0.9023 & 0.9159 & 0.6191 & 0.6814 & 0.3676 & 0.4079 & 0.5773 \\
+      YOLO Cleaning Only & 0.8682 & 0.9023 & 0.9159 & 0.6191 & 0.6814 & 0.3676 & 0.4079 & 0.5773 \\
+      YOLO Cleaning + Masked Visual & 0.8614 & 0.8909 & 0.9045 & 0.5374 & 0.6128 & 0.3016 & 0.3414 & 0.6442 \\
+      YOLO Cleaning + Structure & 0.8795 & 0.9114 & 0.9205 & 0.5629 & 0.6396 & 0.3026 & 0.3458 & 0.6409 \\
+      YOLO Cleaning + Structure + OCR & 0.8773 & 0.9114 & 0.9205 & 0.5657 & 0.6421 & 0.3026 & 0.3458 & 0.6409 \\
+      Attention Visual (No Cleaning) & 0.8750 & 0.9114 & 0.9205 & 0.6031 & 0.6714 & 0.3648 & 0.4099 & 0.5757 \\
+      Attention + Structure (No Cleaning) & \textbf{0.8977} & \textbf{0.9318} & \textbf{0.9500} & \textbf{0.6141} & \textbf{0.6882} & 0.3655 & \textbf{0.4158} & 0.5727 \\
+      Attention + Structure + OCR (No Cleaning) & 0.8705 & 0.9273 & 0.9477 & 0.6116 & 0.6845 & \textbf{0.3655} & \textbf{0.4158} & \textbf{0.5726} \\
+      \bottomrule
+    \end{tabular}
+  \end{adjustbox}
+  \vspace{0.2em}
+  \parbox{\textwidth}{\footnotesize 注：表中粗体表示对应列中的最优结果。ANMRR 越小越好，其余指标越大越好。}
+\end{table}
+
+\subsection{YOLO 清洗路线结果}
+
+YOLO 清洗路线的对比结果如\cref{tab:yolo-route-results}所示。
+
+\begin{table}[htbp]
+  \centering
+  \caption{YOLO 清洗路线正式实验结果}
+  \label{tab:yolo-route-results}
+  \begin{adjustbox}{width=\textwidth}
+    \small
+    \setlength{\tabcolsep}{3.8pt}
+    \begin{tabular}{p{4.4cm}cccccccc}
+      \toprule
+      方法 & Recall@1 & Recall@5 & Recall@10 & mAP@10 & nDCG@10 & FT & ST & ANMRR \\
+      \midrule
+      Baseline & 0.8682 & 0.9023 & 0.9159 & 0.6191 & 0.6814 & 0.3676 & 0.4079 & 0.5773 \\
+      YOLO Cleaning Only & 0.8682 & 0.9023 & 0.9159 & 0.6191 & 0.6814 & 0.3676 & 0.4079 & 0.5773 \\
+      YOLO Cleaning + Masked Visual & 0.8614 & 0.8909 & 0.9045 & 0.5374 & 0.6128 & 0.3016 & 0.3414 & 0.6442 \\
+      YOLO Cleaning + Structure & 0.8795 & 0.9114 & 0.9205 & 0.5629 & 0.6396 & 0.3026 & 0.3458 & 0.6409 \\
+      YOLO Cleaning + Structure + OCR & 0.8773 & 0.9114 & 0.9205 & 0.5657 & 0.6421 & 0.3026 & 0.3458 & 0.6409 \\
+      \bottomrule
+    \end{tabular}
+  \end{adjustbox}
+\end{table}
+
+从\cref{tab:yolo-route-results}可以得到以下结论：
+\begin{enumerate}
+  \item \textbf{单独执行 YOLO 清洗没有带来增益。} \texttt{YOLO Cleaning Only} 与 \texttt{Baseline} 在 8 个指标上完全一致，说明在新数据集已经完成黑底与边缘统一处理后，显式清洗本身不再是主要增益来源。
+  \item \textbf{仅加入清洗后的局部视觉增强反而会降低整体性能。} 清洗加局部视觉增强模式的 Recall@1 从 0.8682 降至 0.8614，mAP@10 从 0.6191 降至 0.5374，说明在当前数据条件下，清洗后的局部聚合可能削弱了原始全局语义信息。
+  \item \textbf{结构重排序能够部分修复清洗路线的性能损失。} 清洗加结构增强模式将 Recall@1 提升到 0.8795，较清洗加局部视觉增强模式提高了 0.0181；nDCG@10 从 0.6128 提高到 0.6396，说明结构相似性信息对于工程图纸精排仍然有效。
+  \item \textbf{OCR 对清洗路线的帮助有限。} 清洗加结构增强与 OCR 模式是在清洗加结构增强模式基础上继续叠加 OCR 后得到的结果。其 mAP@10 仅从 0.5629 提高到 0.5657，nDCG@10 从 0.6396 提高到 0.6421，但 Recall@1 从 0.8795 略降到 0.8773，说明 OCR 文本信息在该路线下未形成稳定的前列排序增益。
+\end{enumerate}
+
+\subsection{无清洗注意力路线结果}
+
+无清洗注意力路线的对比结果如\cref{tab:attention-route-results}所示。
+
+\begin{table}[htbp]
+  \centering
+  \caption{无清洗注意力路线正式实验结果}
+  \label{tab:attention-route-results}
+  \begin{adjustbox}{width=\textwidth}
+    \small
+    \setlength{\tabcolsep}{3.8pt}
+    \begin{tabular}{p{4.8cm}cccccccc}
+      \toprule
+      方法 & Recall@1 & Recall@5 & Recall@10 & mAP@10 & nDCG@10 & FT & ST & ANMRR \\
+      \midrule
+      Baseline & 0.8682 & 0.9023 & 0.9159 & 0.6191 & 0.6814 & 0.3676 & 0.4079 & 0.5773 \\
+      Attention Visual (No Cleaning) & 0.8750 & 0.9114 & 0.9205 & 0.6031 & 0.6714 & 0.3648 & 0.4099 & 0.5757 \\
+      Attention + Structure (No Cleaning) & 0.8977 & 0.9318 & 0.9500 & 0.6141 & 0.6882 & 0.3655 & 0.4158 & 0.5727 \\
+      Attention + Structure + OCR (No Cleaning) & 0.8705 & 0.9273 & 0.9477 & 0.6116 & 0.6845 & 0.3655 & 0.4158 & 0.5726 \\
+      \bottomrule
+    \end{tabular}
+  \end{adjustbox}
+\end{table}
+
+由\cref{tab:attention-route-results}可知：
+\begin{enumerate}
+  \item \textbf{无清洗注意力式视觉增强整体优于纯基线。} 无清洗注意力视觉增强模式将 Recall@1 从 0.8682 提升到 0.8750，Recall@5 从 0.9023 提升到 0.9114，说明即使不做显式清洗，只要在视觉编码阶段强化主体区域，依然可以获得更好的检索效果。
+  \item \textbf{结构增强在该路线中效果最稳定。} 无清洗注意力加结构增强模式在 Recall@1、Recall@5、Recall@10 和 nDCG@10 上均达到全表最优，分别为 0.8977、0.9318、0.9500 和 0.6882，说明“无清洗注意力式视觉增强 + 结构重排”是当前最有效的组合。
+  \item \textbf{OCR 融合未进一步提升该路线的主指标。} 无清洗注意力加结构增强与 OCR 模式是在无清洗注意力加结构增强模式基础上继续叠加 OCR 后得到的结果。虽然其 ANMRR 略优，但 Recall@1 从 0.8977 下降到 0.8705，nDCG@10 也从 0.6882 降至 0.6845，说明 OCR 融合对该路线同样没有形成稳定的正增益。
+\end{enumerate}
+
+\subsection{两条主线的横向比较}
+
+为了更清楚地比较两条主线，本文进一步从三个角度进行横向分析。
+
+\subsubsection{YOLO 清洗是否仍然必要}
+
+实验结果表明，\texttt{YOLO Cleaning Only} 与 \texttt{Baseline} 完全一致，而 \texttt{YOLO Cleaning + Masked Visual} 甚至在多数指标上明显下降。这表明，在已经完成黑底、黑边统一清理的大规模新数据集上，YOLO 清洗已不再是决定性能上限的关键因素。数据集预处理已消除了大量显式背景干扰，额外的检测清洗因而未能形成新的稳定收益。
+
+\subsubsection{无清洗注意力路线是否更优}
+
+从总体结果来看，答案是肯定的。相比清洗路线中的最佳视觉版本 \texttt{YOLO Cleaning + Structure}，\texttt{Attention + Structure (No Cleaning)} 在 Recall@1、Recall@5、Recall@10、mAP@10、nDCG@10 和 ANMRR 上均表现更优。这表明，对于当前任务而言，相较于在前处理阶段显式移除区域，在特征编码阶段直接增强主体结构表达更符合工程图纸检索的需求。
+
+\subsubsection{OCR 辅助是否稳定有效}
+
+本文在两条主线中都测试了 OCR 辅助检索。结果显示：
+\begin{enumerate}
+  \item 在 YOLO 清洗路线中，OCR 仅带来了极小的 mAP 和 nDCG 提升，但未提升 Recall@1；
+  \item 在无清洗注意力路线中，OCR 反而使 Recall@1 和 nDCG@10 略有下降；
+  \item 两条路线中 OCR 的增益都不稳定，说明当前 OCR 文本质量、标题栏模板差异和字段抽取置信度仍然限制了多模态策略的作用发挥。
+\end{enumerate}
+
+因此，在本文当前系统设置下，OCR 更适合作为可扩展增强模块，而非主要性能来源。
+
+\section{补充分析与讨论}
+
+\subsection{为什么清洗路线没有优势}
+
+清洗路线在旧数据条件下本应更有潜力，因为旧版数据包含大量黑底、黑边和截图噪声。但在本文最终正式实验中，数据集已经过统一清理，显式 YOLO 清洗面对的是“已大幅净化后的图纸”，因此其边际收益明显减弱。此外，若清洗策略过强，还可能将部分结构细节和辅助线一并覆盖，从而降低局部形状辨识能力。这也是 \texttt{YOLO Cleaning + Masked Visual} 性能下降的重要原因。
+
+\subsection{为什么无清洗注意力路线更适合当前任务}
+
+工程图纸不同于自然图像，其主体通常由轮廓线、剖切线、尺寸线和局部结构组合构成。显式检测清洗更适合“前景与背景界限清晰”的场景，而对于线框类图纸，直接在视觉编码阶段引导模型关注主体结构，往往比先执行区域级清除更稳健。当前结果表明，无清洗注意力路线既保留了原图整体布局，又强化了局部主体区域，因此在新数据集上取得了最佳性能。
+
+\subsection{OCR 模块的当前局限}
+
+虽然工程图纸的标题栏字段具备较强语义信息，但 OCR 模块当前仍受到以下因素影响：
+\begin{enumerate}
+  \item 图号、零件名称和材料字段在不同模板中位置不统一；
+  \item 部分旧图纸的标题栏分辨率较低或文本模糊；
+  \item OCR 结果在候选重排阶段只能作为辅助信号，难以稳定压过强视觉匹配结果；
+  \item 某些查询的标题栏信息与文件名、结构布局之间并不完全一致，容易引入轻微排序扰动。
+\end{enumerate}
+
+因此，OCR 多模态结果在本次实验中没有形成稳定正增益，这也是本文必须如实报告的结论之一。
+
+\section{本章小结}
+
+本文基于清理后的 \texttt{Dataset\_img3} 数据集，完成了双主线、8 组模式的正式实验。实验结果表明：在当前大规模新数据集上，YOLO 清洗本身不再构成主要收益来源；无清洗注意力式视觉增强路线整体优于 YOLO 清洗路线；结构重排序依然是最稳定的增强模块；OCR 文本辅助检索尚未在当前设置下形成稳定正增益。
+
+综合来看，\texttt{Attention + Structure (No Cleaning)} 是当前表现最优的方案。该结果表明，对于已经完成统一清理的工程图纸数据集，直接增强主体结构感知能力较继续依赖显式清洗更适合作为本文的主要方法路线。由此，本章不仅完成了对 8 组模式的系统比较，也给出了后续系统实现与全文总结所依据的核心实验结论。

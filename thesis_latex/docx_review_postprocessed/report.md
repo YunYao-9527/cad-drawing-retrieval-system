@@ -1,0 +1,3026 @@
+# DOCX 格式检查报告
+
+- 文件：`D:\workspace\图纸检索项目\数据集\111_test\0version_1\thesis_latex\main.docx`
+- 严重问题：587
+- 警告：17
+
+## 问题列表
+
+- **WARNING** `toc.field.missing`：没有检测到 Word 自动目录字段，请确认目录不是静态文本。
+  - 位置：文档级
+  - 期望：TOC \o "1-3" \h \u
+  - 实际：未检测到 TOC 字段
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 299 段
+  - 文本：0.8682
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 299 段
+  - 文本：0.8682
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 299 段
+  - 文本：0.8682
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 299 段
+  - 文本：0.8682
+  - 期望：1.1  标题
+  - 实际：0.8682
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 300 段
+  - 文本：0.9023
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 300 段
+  - 文本：0.9023
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 300 段
+  - 文本：0.9023
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 300 段
+  - 文本：0.9023
+  - 期望：1.1  标题
+  - 实际：0.9023
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 301 段
+  - 文本：0.9159
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 301 段
+  - 文本：0.9159
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 301 段
+  - 文本：0.9159
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 301 段
+  - 文本：0.9159
+  - 期望：1.1  标题
+  - 实际：0.9159
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 302 段
+  - 文本：0.6191
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 302 段
+  - 文本：0.6191
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 302 段
+  - 文本：0.6191
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 302 段
+  - 文本：0.6191
+  - 期望：1.1  标题
+  - 实际：0.6191
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 303 段
+  - 文本：0.6814
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 303 段
+  - 文本：0.6814
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 303 段
+  - 文本：0.6814
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 303 段
+  - 文本：0.6814
+  - 期望：1.1  标题
+  - 实际：0.6814
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 304 段
+  - 文本：0.3676
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 304 段
+  - 文本：0.3676
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 304 段
+  - 文本：0.3676
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 304 段
+  - 文本：0.3676
+  - 期望：1.1  标题
+  - 实际：0.3676
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 305 段
+  - 文本：0.4079
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 305 段
+  - 文本：0.4079
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 305 段
+  - 文本：0.4079
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 305 段
+  - 文本：0.4079
+  - 期望：1.1  标题
+  - 实际：0.4079
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 306 段
+  - 文本：0.5773
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 306 段
+  - 文本：0.5773
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 306 段
+  - 文本：0.5773
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 306 段
+  - 文本：0.5773
+  - 期望：1.1  标题
+  - 实际：0.5773
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 308 段
+  - 文本：0.8682
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 308 段
+  - 文本：0.8682
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 308 段
+  - 文本：0.8682
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 308 段
+  - 文本：0.8682
+  - 期望：1.1  标题
+  - 实际：0.8682
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 309 段
+  - 文本：0.9023
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 309 段
+  - 文本：0.9023
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 309 段
+  - 文本：0.9023
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 309 段
+  - 文本：0.9023
+  - 期望：1.1  标题
+  - 实际：0.9023
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 310 段
+  - 文本：0.9159
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 310 段
+  - 文本：0.9159
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 310 段
+  - 文本：0.9159
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 310 段
+  - 文本：0.9159
+  - 期望：1.1  标题
+  - 实际：0.9159
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 311 段
+  - 文本：0.6191
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 311 段
+  - 文本：0.6191
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 311 段
+  - 文本：0.6191
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 311 段
+  - 文本：0.6191
+  - 期望：1.1  标题
+  - 实际：0.6191
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 312 段
+  - 文本：0.6814
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 312 段
+  - 文本：0.6814
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 312 段
+  - 文本：0.6814
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 312 段
+  - 文本：0.6814
+  - 期望：1.1  标题
+  - 实际：0.6814
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 313 段
+  - 文本：0.3676
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 313 段
+  - 文本：0.3676
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 313 段
+  - 文本：0.3676
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 313 段
+  - 文本：0.3676
+  - 期望：1.1  标题
+  - 实际：0.3676
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 314 段
+  - 文本：0.4079
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 314 段
+  - 文本：0.4079
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 314 段
+  - 文本：0.4079
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 314 段
+  - 文本：0.4079
+  - 期望：1.1  标题
+  - 实际：0.4079
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 315 段
+  - 文本：0.5773
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 315 段
+  - 文本：0.5773
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 315 段
+  - 文本：0.5773
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 315 段
+  - 文本：0.5773
+  - 期望：1.1  标题
+  - 实际：0.5773
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 317 段
+  - 文本：0.8614
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 317 段
+  - 文本：0.8614
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 317 段
+  - 文本：0.8614
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 317 段
+  - 文本：0.8614
+  - 期望：1.1  标题
+  - 实际：0.8614
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 318 段
+  - 文本：0.8909
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 318 段
+  - 文本：0.8909
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 318 段
+  - 文本：0.8909
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 318 段
+  - 文本：0.8909
+  - 期望：1.1  标题
+  - 实际：0.8909
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 319 段
+  - 文本：0.9045
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 319 段
+  - 文本：0.9045
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 319 段
+  - 文本：0.9045
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 319 段
+  - 文本：0.9045
+  - 期望：1.1  标题
+  - 实际：0.9045
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 320 段
+  - 文本：0.5374
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 320 段
+  - 文本：0.5374
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 320 段
+  - 文本：0.5374
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 320 段
+  - 文本：0.5374
+  - 期望：1.1  标题
+  - 实际：0.5374
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 321 段
+  - 文本：0.6128
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 321 段
+  - 文本：0.6128
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 321 段
+  - 文本：0.6128
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 321 段
+  - 文本：0.6128
+  - 期望：1.1  标题
+  - 实际：0.6128
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 322 段
+  - 文本：0.3016
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 322 段
+  - 文本：0.3016
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 322 段
+  - 文本：0.3016
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 322 段
+  - 文本：0.3016
+  - 期望：1.1  标题
+  - 实际：0.3016
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 323 段
+  - 文本：0.3414
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 323 段
+  - 文本：0.3414
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 323 段
+  - 文本：0.3414
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 323 段
+  - 文本：0.3414
+  - 期望：1.1  标题
+  - 实际：0.3414
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 324 段
+  - 文本：0.6442
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 324 段
+  - 文本：0.6442
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 324 段
+  - 文本：0.6442
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 324 段
+  - 文本：0.6442
+  - 期望：1.1  标题
+  - 实际：0.6442
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 326 段
+  - 文本：0.8795
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 326 段
+  - 文本：0.8795
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 326 段
+  - 文本：0.8795
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 326 段
+  - 文本：0.8795
+  - 期望：1.1  标题
+  - 实际：0.8795
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 327 段
+  - 文本：0.9114
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 327 段
+  - 文本：0.9114
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 327 段
+  - 文本：0.9114
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 327 段
+  - 文本：0.9114
+  - 期望：1.1  标题
+  - 实际：0.9114
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 328 段
+  - 文本：0.9205
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 328 段
+  - 文本：0.9205
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 328 段
+  - 文本：0.9205
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 328 段
+  - 文本：0.9205
+  - 期望：1.1  标题
+  - 实际：0.9205
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 329 段
+  - 文本：0.5629
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 329 段
+  - 文本：0.5629
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 329 段
+  - 文本：0.5629
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 329 段
+  - 文本：0.5629
+  - 期望：1.1  标题
+  - 实际：0.5629
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 330 段
+  - 文本：0.6396
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 330 段
+  - 文本：0.6396
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 330 段
+  - 文本：0.6396
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 330 段
+  - 文本：0.6396
+  - 期望：1.1  标题
+  - 实际：0.6396
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 331 段
+  - 文本：0.3026
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 331 段
+  - 文本：0.3026
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 331 段
+  - 文本：0.3026
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 331 段
+  - 文本：0.3026
+  - 期望：1.1  标题
+  - 实际：0.3026
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 332 段
+  - 文本：0.3458
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 332 段
+  - 文本：0.3458
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 332 段
+  - 文本：0.3458
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 332 段
+  - 文本：0.3458
+  - 期望：1.1  标题
+  - 实际：0.3458
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 333 段
+  - 文本：0.6409
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 333 段
+  - 文本：0.6409
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 333 段
+  - 文本：0.6409
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 333 段
+  - 文本：0.6409
+  - 期望：1.1  标题
+  - 实际：0.6409
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 335 段
+  - 文本：0.8773
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 335 段
+  - 文本：0.8773
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 335 段
+  - 文本：0.8773
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 335 段
+  - 文本：0.8773
+  - 期望：1.1  标题
+  - 实际：0.8773
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 336 段
+  - 文本：0.9114
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 336 段
+  - 文本：0.9114
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 336 段
+  - 文本：0.9114
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 336 段
+  - 文本：0.9114
+  - 期望：1.1  标题
+  - 实际：0.9114
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 337 段
+  - 文本：0.9205
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 337 段
+  - 文本：0.9205
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 337 段
+  - 文本：0.9205
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 337 段
+  - 文本：0.9205
+  - 期望：1.1  标题
+  - 实际：0.9205
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 338 段
+  - 文本：0.5657
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 338 段
+  - 文本：0.5657
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 338 段
+  - 文本：0.5657
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 338 段
+  - 文本：0.5657
+  - 期望：1.1  标题
+  - 实际：0.5657
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 339 段
+  - 文本：0.6421
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 339 段
+  - 文本：0.6421
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 339 段
+  - 文本：0.6421
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 339 段
+  - 文本：0.6421
+  - 期望：1.1  标题
+  - 实际：0.6421
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 340 段
+  - 文本：0.3026
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 340 段
+  - 文本：0.3026
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 340 段
+  - 文本：0.3026
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 340 段
+  - 文本：0.3026
+  - 期望：1.1  标题
+  - 实际：0.3026
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 341 段
+  - 文本：0.3458
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 341 段
+  - 文本：0.3458
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 341 段
+  - 文本：0.3458
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 341 段
+  - 文本：0.3458
+  - 期望：1.1  标题
+  - 实际：0.3458
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 342 段
+  - 文本：0.6409
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 342 段
+  - 文本：0.6409
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 342 段
+  - 文本：0.6409
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 342 段
+  - 文本：0.6409
+  - 期望：1.1  标题
+  - 实际：0.6409
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 344 段
+  - 文本：0.8750
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 344 段
+  - 文本：0.8750
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 344 段
+  - 文本：0.8750
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 344 段
+  - 文本：0.8750
+  - 期望：1.1  标题
+  - 实际：0.8750
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 345 段
+  - 文本：0.9114
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 345 段
+  - 文本：0.9114
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 345 段
+  - 文本：0.9114
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 345 段
+  - 文本：0.9114
+  - 期望：1.1  标题
+  - 实际：0.9114
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 346 段
+  - 文本：0.9205
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 346 段
+  - 文本：0.9205
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 346 段
+  - 文本：0.9205
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 346 段
+  - 文本：0.9205
+  - 期望：1.1  标题
+  - 实际：0.9205
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 347 段
+  - 文本：0.6031
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 347 段
+  - 文本：0.6031
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 347 段
+  - 文本：0.6031
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 347 段
+  - 文本：0.6031
+  - 期望：1.1  标题
+  - 实际：0.6031
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 348 段
+  - 文本：0.6714
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 348 段
+  - 文本：0.6714
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 348 段
+  - 文本：0.6714
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 348 段
+  - 文本：0.6714
+  - 期望：1.1  标题
+  - 实际：0.6714
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 349 段
+  - 文本：0.3648
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 349 段
+  - 文本：0.3648
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 349 段
+  - 文本：0.3648
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 349 段
+  - 文本：0.3648
+  - 期望：1.1  标题
+  - 实际：0.3648
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 350 段
+  - 文本：0.4099
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 350 段
+  - 文本：0.4099
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 350 段
+  - 文本：0.4099
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 350 段
+  - 文本：0.4099
+  - 期望：1.1  标题
+  - 实际：0.4099
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 351 段
+  - 文本：0.5757
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 351 段
+  - 文本：0.5757
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 351 段
+  - 文本：0.5757
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 351 段
+  - 文本：0.5757
+  - 期望：1.1  标题
+  - 实际：0.5757
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 353 段
+  - 文本：0.8977
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 353 段
+  - 文本：0.8977
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 353 段
+  - 文本：0.8977
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 353 段
+  - 文本：0.8977
+  - 期望：1.1  标题
+  - 实际：0.8977
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 354 段
+  - 文本：0.9318
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 354 段
+  - 文本：0.9318
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 354 段
+  - 文本：0.9318
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 354 段
+  - 文本：0.9318
+  - 期望：1.1  标题
+  - 实际：0.9318
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 355 段
+  - 文本：0.9500
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 355 段
+  - 文本：0.9500
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 355 段
+  - 文本：0.9500
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 355 段
+  - 文本：0.9500
+  - 期望：1.1  标题
+  - 实际：0.9500
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 356 段
+  - 文本：0.6141
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 356 段
+  - 文本：0.6141
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 356 段
+  - 文本：0.6141
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 356 段
+  - 文本：0.6141
+  - 期望：1.1  标题
+  - 实际：0.6141
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 357 段
+  - 文本：0.6882
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 357 段
+  - 文本：0.6882
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 357 段
+  - 文本：0.6882
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 357 段
+  - 文本：0.6882
+  - 期望：1.1  标题
+  - 实际：0.6882
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 358 段
+  - 文本：0.3655
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 358 段
+  - 文本：0.3655
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 358 段
+  - 文本：0.3655
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 358 段
+  - 文本：0.3655
+  - 期望：1.1  标题
+  - 实际：0.3655
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 359 段
+  - 文本：0.4158
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 359 段
+  - 文本：0.4158
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 359 段
+  - 文本：0.4158
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 359 段
+  - 文本：0.4158
+  - 期望：1.1  标题
+  - 实际：0.4158
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 360 段
+  - 文本：0.5727
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 360 段
+  - 文本：0.5727
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 360 段
+  - 文本：0.5727
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 360 段
+  - 文本：0.5727
+  - 期望：1.1  标题
+  - 实际：0.5727
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 362 段
+  - 文本：0.8705
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 362 段
+  - 文本：0.8705
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 362 段
+  - 文本：0.8705
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 362 段
+  - 文本：0.8705
+  - 期望：1.1  标题
+  - 实际：0.8705
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 363 段
+  - 文本：0.9273
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 363 段
+  - 文本：0.9273
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 363 段
+  - 文本：0.9273
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 363 段
+  - 文本：0.9273
+  - 期望：1.1  标题
+  - 实际：0.9273
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 364 段
+  - 文本：0.9477
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 364 段
+  - 文本：0.9477
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 364 段
+  - 文本：0.9477
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 364 段
+  - 文本：0.9477
+  - 期望：1.1  标题
+  - 实际：0.9477
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 365 段
+  - 文本：0.6116
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 365 段
+  - 文本：0.6116
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 365 段
+  - 文本：0.6116
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 365 段
+  - 文本：0.6116
+  - 期望：1.1  标题
+  - 实际：0.6116
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 366 段
+  - 文本：0.6845
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 366 段
+  - 文本：0.6845
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 366 段
+  - 文本：0.6845
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 366 段
+  - 文本：0.6845
+  - 期望：1.1  标题
+  - 实际：0.6845
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 367 段
+  - 文本：0.3655
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 367 段
+  - 文本：0.3655
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 367 段
+  - 文本：0.3655
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 367 段
+  - 文本：0.3655
+  - 期望：1.1  标题
+  - 实际：0.3655
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 368 段
+  - 文本：0.4158
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 368 段
+  - 文本：0.4158
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 368 段
+  - 文本：0.4158
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 368 段
+  - 文本：0.4158
+  - 期望：1.1  标题
+  - 实际：0.4158
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 369 段
+  - 文本：0.5726
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 369 段
+  - 文本：0.5726
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 369 段
+  - 文本：0.5726
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 369 段
+  - 文本：0.5726
+  - 期望：1.1  标题
+  - 实际：0.5726
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 385 段
+  - 文本：0.8682
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 385 段
+  - 文本：0.8682
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 385 段
+  - 文本：0.8682
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 385 段
+  - 文本：0.8682
+  - 期望：1.1  标题
+  - 实际：0.8682
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 386 段
+  - 文本：0.9023
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 386 段
+  - 文本：0.9023
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 386 段
+  - 文本：0.9023
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 386 段
+  - 文本：0.9023
+  - 期望：1.1  标题
+  - 实际：0.9023
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 387 段
+  - 文本：0.9159
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 387 段
+  - 文本：0.9159
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 387 段
+  - 文本：0.9159
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 387 段
+  - 文本：0.9159
+  - 期望：1.1  标题
+  - 实际：0.9159
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 388 段
+  - 文本：0.6191
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 388 段
+  - 文本：0.6191
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 388 段
+  - 文本：0.6191
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 388 段
+  - 文本：0.6191
+  - 期望：1.1  标题
+  - 实际：0.6191
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 389 段
+  - 文本：0.6814
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 389 段
+  - 文本：0.6814
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 389 段
+  - 文本：0.6814
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 389 段
+  - 文本：0.6814
+  - 期望：1.1  标题
+  - 实际：0.6814
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 390 段
+  - 文本：0.3676
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 390 段
+  - 文本：0.3676
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 390 段
+  - 文本：0.3676
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 390 段
+  - 文本：0.3676
+  - 期望：1.1  标题
+  - 实际：0.3676
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 391 段
+  - 文本：0.4079
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 391 段
+  - 文本：0.4079
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 391 段
+  - 文本：0.4079
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 391 段
+  - 文本：0.4079
+  - 期望：1.1  标题
+  - 实际：0.4079
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 392 段
+  - 文本：0.5773
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 392 段
+  - 文本：0.5773
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 392 段
+  - 文本：0.5773
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 392 段
+  - 文本：0.5773
+  - 期望：1.1  标题
+  - 实际：0.5773
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 394 段
+  - 文本：0.8682
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 394 段
+  - 文本：0.8682
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 394 段
+  - 文本：0.8682
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 394 段
+  - 文本：0.8682
+  - 期望：1.1  标题
+  - 实际：0.8682
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 395 段
+  - 文本：0.9023
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 395 段
+  - 文本：0.9023
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 395 段
+  - 文本：0.9023
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 395 段
+  - 文本：0.9023
+  - 期望：1.1  标题
+  - 实际：0.9023
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 396 段
+  - 文本：0.9159
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 396 段
+  - 文本：0.9159
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 396 段
+  - 文本：0.9159
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 396 段
+  - 文本：0.9159
+  - 期望：1.1  标题
+  - 实际：0.9159
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 397 段
+  - 文本：0.6191
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 397 段
+  - 文本：0.6191
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 397 段
+  - 文本：0.6191
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 397 段
+  - 文本：0.6191
+  - 期望：1.1  标题
+  - 实际：0.6191
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 398 段
+  - 文本：0.6814
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 398 段
+  - 文本：0.6814
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 398 段
+  - 文本：0.6814
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 398 段
+  - 文本：0.6814
+  - 期望：1.1  标题
+  - 实际：0.6814
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 399 段
+  - 文本：0.3676
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 399 段
+  - 文本：0.3676
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 399 段
+  - 文本：0.3676
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 399 段
+  - 文本：0.3676
+  - 期望：1.1  标题
+  - 实际：0.3676
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 400 段
+  - 文本：0.4079
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 400 段
+  - 文本：0.4079
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 400 段
+  - 文本：0.4079
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 400 段
+  - 文本：0.4079
+  - 期望：1.1  标题
+  - 实际：0.4079
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 401 段
+  - 文本：0.5773
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 401 段
+  - 文本：0.5773
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 401 段
+  - 文本：0.5773
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 401 段
+  - 文本：0.5773
+  - 期望：1.1  标题
+  - 实际：0.5773
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 403 段
+  - 文本：0.8614
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 403 段
+  - 文本：0.8614
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 403 段
+  - 文本：0.8614
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 403 段
+  - 文本：0.8614
+  - 期望：1.1  标题
+  - 实际：0.8614
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 404 段
+  - 文本：0.8909
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 404 段
+  - 文本：0.8909
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 404 段
+  - 文本：0.8909
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 404 段
+  - 文本：0.8909
+  - 期望：1.1  标题
+  - 实际：0.8909
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 405 段
+  - 文本：0.9045
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 405 段
+  - 文本：0.9045
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 405 段
+  - 文本：0.9045
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 405 段
+  - 文本：0.9045
+  - 期望：1.1  标题
+  - 实际：0.9045
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 406 段
+  - 文本：0.5374
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 406 段
+  - 文本：0.5374
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 406 段
+  - 文本：0.5374
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 406 段
+  - 文本：0.5374
+  - 期望：1.1  标题
+  - 实际：0.5374
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 407 段
+  - 文本：0.6128
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 407 段
+  - 文本：0.6128
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 407 段
+  - 文本：0.6128
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 407 段
+  - 文本：0.6128
+  - 期望：1.1  标题
+  - 实际：0.6128
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 408 段
+  - 文本：0.3016
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 408 段
+  - 文本：0.3016
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 408 段
+  - 文本：0.3016
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 408 段
+  - 文本：0.3016
+  - 期望：1.1  标题
+  - 实际：0.3016
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 409 段
+  - 文本：0.3414
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 409 段
+  - 文本：0.3414
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 409 段
+  - 文本：0.3414
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 409 段
+  - 文本：0.3414
+  - 期望：1.1  标题
+  - 实际：0.3414
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 410 段
+  - 文本：0.6442
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 410 段
+  - 文本：0.6442
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 410 段
+  - 文本：0.6442
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 410 段
+  - 文本：0.6442
+  - 期望：1.1  标题
+  - 实际：0.6442
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 412 段
+  - 文本：0.8795
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 412 段
+  - 文本：0.8795
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 412 段
+  - 文本：0.8795
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 412 段
+  - 文本：0.8795
+  - 期望：1.1  标题
+  - 实际：0.8795
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 413 段
+  - 文本：0.9114
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 413 段
+  - 文本：0.9114
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 413 段
+  - 文本：0.9114
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 413 段
+  - 文本：0.9114
+  - 期望：1.1  标题
+  - 实际：0.9114
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 414 段
+  - 文本：0.9205
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 414 段
+  - 文本：0.9205
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 414 段
+  - 文本：0.9205
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 414 段
+  - 文本：0.9205
+  - 期望：1.1  标题
+  - 实际：0.9205
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 415 段
+  - 文本：0.5629
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 415 段
+  - 文本：0.5629
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 415 段
+  - 文本：0.5629
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 415 段
+  - 文本：0.5629
+  - 期望：1.1  标题
+  - 实际：0.5629
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 416 段
+  - 文本：0.6396
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 416 段
+  - 文本：0.6396
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 416 段
+  - 文本：0.6396
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 416 段
+  - 文本：0.6396
+  - 期望：1.1  标题
+  - 实际：0.6396
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 417 段
+  - 文本：0.3026
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 417 段
+  - 文本：0.3026
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 417 段
+  - 文本：0.3026
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 417 段
+  - 文本：0.3026
+  - 期望：1.1  标题
+  - 实际：0.3026
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 418 段
+  - 文本：0.3458
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 418 段
+  - 文本：0.3458
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 418 段
+  - 文本：0.3458
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 418 段
+  - 文本：0.3458
+  - 期望：1.1  标题
+  - 实际：0.3458
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 419 段
+  - 文本：0.6409
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 419 段
+  - 文本：0.6409
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 419 段
+  - 文本：0.6409
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 419 段
+  - 文本：0.6409
+  - 期望：1.1  标题
+  - 实际：0.6409
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 421 段
+  - 文本：0.8773
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 421 段
+  - 文本：0.8773
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 421 段
+  - 文本：0.8773
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 421 段
+  - 文本：0.8773
+  - 期望：1.1  标题
+  - 实际：0.8773
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 422 段
+  - 文本：0.9114
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 422 段
+  - 文本：0.9114
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 422 段
+  - 文本：0.9114
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 422 段
+  - 文本：0.9114
+  - 期望：1.1  标题
+  - 实际：0.9114
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 423 段
+  - 文本：0.9205
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 423 段
+  - 文本：0.9205
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 423 段
+  - 文本：0.9205
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 423 段
+  - 文本：0.9205
+  - 期望：1.1  标题
+  - 实际：0.9205
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 424 段
+  - 文本：0.5657
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 424 段
+  - 文本：0.5657
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 424 段
+  - 文本：0.5657
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 424 段
+  - 文本：0.5657
+  - 期望：1.1  标题
+  - 实际：0.5657
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 425 段
+  - 文本：0.6421
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 425 段
+  - 文本：0.6421
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 425 段
+  - 文本：0.6421
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 425 段
+  - 文本：0.6421
+  - 期望：1.1  标题
+  - 实际：0.6421
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 426 段
+  - 文本：0.3026
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 426 段
+  - 文本：0.3026
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 426 段
+  - 文本：0.3026
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 426 段
+  - 文本：0.3026
+  - 期望：1.1  标题
+  - 实际：0.3026
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 427 段
+  - 文本：0.3458
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 427 段
+  - 文本：0.3458
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 427 段
+  - 文本：0.3458
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 427 段
+  - 文本：0.3458
+  - 期望：1.1  标题
+  - 实际：0.3458
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 428 段
+  - 文本：0.6409
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 428 段
+  - 文本：0.6409
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 428 段
+  - 文本：0.6409
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 428 段
+  - 文本：0.6409
+  - 期望：1.1  标题
+  - 实际：0.6409
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 448 段
+  - 文本：0.8682
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 448 段
+  - 文本：0.8682
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 448 段
+  - 文本：0.8682
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 448 段
+  - 文本：0.8682
+  - 期望：1.1  标题
+  - 实际：0.8682
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 449 段
+  - 文本：0.9023
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 449 段
+  - 文本：0.9023
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 449 段
+  - 文本：0.9023
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 449 段
+  - 文本：0.9023
+  - 期望：1.1  标题
+  - 实际：0.9023
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 450 段
+  - 文本：0.9159
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 450 段
+  - 文本：0.9159
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 450 段
+  - 文本：0.9159
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 450 段
+  - 文本：0.9159
+  - 期望：1.1  标题
+  - 实际：0.9159
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 451 段
+  - 文本：0.6191
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 451 段
+  - 文本：0.6191
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 451 段
+  - 文本：0.6191
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 451 段
+  - 文本：0.6191
+  - 期望：1.1  标题
+  - 实际：0.6191
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 452 段
+  - 文本：0.6814
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 452 段
+  - 文本：0.6814
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 452 段
+  - 文本：0.6814
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 452 段
+  - 文本：0.6814
+  - 期望：1.1  标题
+  - 实际：0.6814
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 453 段
+  - 文本：0.3676
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 453 段
+  - 文本：0.3676
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 453 段
+  - 文本：0.3676
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 453 段
+  - 文本：0.3676
+  - 期望：1.1  标题
+  - 实际：0.3676
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 454 段
+  - 文本：0.4079
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 454 段
+  - 文本：0.4079
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 454 段
+  - 文本：0.4079
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 454 段
+  - 文本：0.4079
+  - 期望：1.1  标题
+  - 实际：0.4079
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 455 段
+  - 文本：0.5773
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 455 段
+  - 文本：0.5773
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 455 段
+  - 文本：0.5773
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 455 段
+  - 文本：0.5773
+  - 期望：1.1  标题
+  - 实际：0.5773
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 457 段
+  - 文本：0.8750
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 457 段
+  - 文本：0.8750
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 457 段
+  - 文本：0.8750
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 457 段
+  - 文本：0.8750
+  - 期望：1.1  标题
+  - 实际：0.8750
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 458 段
+  - 文本：0.9114
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 458 段
+  - 文本：0.9114
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 458 段
+  - 文本：0.9114
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 458 段
+  - 文本：0.9114
+  - 期望：1.1  标题
+  - 实际：0.9114
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 459 段
+  - 文本：0.9205
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 459 段
+  - 文本：0.9205
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 459 段
+  - 文本：0.9205
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 459 段
+  - 文本：0.9205
+  - 期望：1.1  标题
+  - 实际：0.9205
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 460 段
+  - 文本：0.6031
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 460 段
+  - 文本：0.6031
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 460 段
+  - 文本：0.6031
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 460 段
+  - 文本：0.6031
+  - 期望：1.1  标题
+  - 实际：0.6031
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 461 段
+  - 文本：0.6714
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 461 段
+  - 文本：0.6714
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 461 段
+  - 文本：0.6714
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 461 段
+  - 文本：0.6714
+  - 期望：1.1  标题
+  - 实际：0.6714
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 462 段
+  - 文本：0.3648
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 462 段
+  - 文本：0.3648
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 462 段
+  - 文本：0.3648
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 462 段
+  - 文本：0.3648
+  - 期望：1.1  标题
+  - 实际：0.3648
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 463 段
+  - 文本：0.4099
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 463 段
+  - 文本：0.4099
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 463 段
+  - 文本：0.4099
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 463 段
+  - 文本：0.4099
+  - 期望：1.1  标题
+  - 实际：0.4099
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 464 段
+  - 文本：0.5757
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 464 段
+  - 文本：0.5757
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 464 段
+  - 文本：0.5757
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 464 段
+  - 文本：0.5757
+  - 期望：1.1  标题
+  - 实际：0.5757
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 466 段
+  - 文本：0.8977
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 466 段
+  - 文本：0.8977
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 466 段
+  - 文本：0.8977
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 466 段
+  - 文本：0.8977
+  - 期望：1.1  标题
+  - 实际：0.8977
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 467 段
+  - 文本：0.9318
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 467 段
+  - 文本：0.9318
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 467 段
+  - 文本：0.9318
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 467 段
+  - 文本：0.9318
+  - 期望：1.1  标题
+  - 实际：0.9318
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 468 段
+  - 文本：0.9500
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 468 段
+  - 文本：0.9500
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 468 段
+  - 文本：0.9500
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 468 段
+  - 文本：0.9500
+  - 期望：1.1  标题
+  - 实际：0.9500
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 469 段
+  - 文本：0.6141
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 469 段
+  - 文本：0.6141
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 469 段
+  - 文本：0.6141
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 469 段
+  - 文本：0.6141
+  - 期望：1.1  标题
+  - 实际：0.6141
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 470 段
+  - 文本：0.6882
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 470 段
+  - 文本：0.6882
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 470 段
+  - 文本：0.6882
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 470 段
+  - 文本：0.6882
+  - 期望：1.1  标题
+  - 实际：0.6882
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 471 段
+  - 文本：0.3655
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 471 段
+  - 文本：0.3655
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 471 段
+  - 文本：0.3655
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 471 段
+  - 文本：0.3655
+  - 期望：1.1  标题
+  - 实际：0.3655
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 472 段
+  - 文本：0.4158
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 472 段
+  - 文本：0.4158
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 472 段
+  - 文本：0.4158
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 472 段
+  - 文本：0.4158
+  - 期望：1.1  标题
+  - 实际：0.4158
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 473 段
+  - 文本：0.5727
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 473 段
+  - 文本：0.5727
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 473 段
+  - 文本：0.5727
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 473 段
+  - 文本：0.5727
+  - 期望：1.1  标题
+  - 实际：0.5727
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 475 段
+  - 文本：0.8705
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 475 段
+  - 文本：0.8705
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 475 段
+  - 文本：0.8705
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 475 段
+  - 文本：0.8705
+  - 期望：1.1  标题
+  - 实际：0.8705
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 476 段
+  - 文本：0.9273
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 476 段
+  - 文本：0.9273
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 476 段
+  - 文本：0.9273
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 476 段
+  - 文本：0.9273
+  - 期望：1.1  标题
+  - 实际：0.9273
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 477 段
+  - 文本：0.9477
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 477 段
+  - 文本：0.9477
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 477 段
+  - 文本：0.9477
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 477 段
+  - 文本：0.9477
+  - 期望：1.1  标题
+  - 实际：0.9477
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 478 段
+  - 文本：0.6116
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 478 段
+  - 文本：0.6116
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 478 段
+  - 文本：0.6116
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 478 段
+  - 文本：0.6116
+  - 期望：1.1  标题
+  - 实际：0.6116
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 479 段
+  - 文本：0.6845
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 479 段
+  - 文本：0.6845
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 479 段
+  - 文本：0.6845
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 479 段
+  - 文本：0.6845
+  - 期望：1.1  标题
+  - 实际：0.6845
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 480 段
+  - 文本：0.3655
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 480 段
+  - 文本：0.3655
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 480 段
+  - 文本：0.3655
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 480 段
+  - 文本：0.3655
+  - 期望：1.1  标题
+  - 实际：0.3655
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 481 段
+  - 文本：0.4158
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 481 段
+  - 文本：0.4158
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 481 段
+  - 文本：0.4158
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 481 段
+  - 文本：0.4158
+  - 期望：1.1  标题
+  - 实际：0.4158
+- **ERROR** `heading.section.style`：二级标题应使用模板二级标题样式。
+  - 位置：第 482 段
+  - 文本：0.5726
+  - 期望：38
+  - 实际：Compact
+- **ERROR** `heading.section.align`：二级标题应顶格左对齐。
+  - 位置：第 482 段
+  - 文本：0.5726
+  - 期望：left
+  - 实际：center
+- **ERROR** `heading.section.line`：二级标题应为单倍行距。
+  - 位置：第 482 段
+  - 文本：0.5726
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `heading.section.number_space`：二级标题编号和标题文字之间应空两格。
+  - 位置：第 482 段
+  - 文本：0.5726
+  - 期望：1.1  标题
+  - 实际：0.5726
+- **ERROR** `abstract.cn.title.text`：中文摘要标题两字之间应空一格。
+  - 位置：第 39 段
+  - 文本：摘要
+  - 期望：摘  要
+  - 实际：摘要
+- **ERROR** `abstract.cn.title.style`：中文摘要标题应使用不编号章标题样式。
+  - 位置：第 39 段
+  - 文本：摘要
+  - 期望：36
+  - 实际：2
+- **ERROR** `abstract.cn.title.align`：中文摘要标题应居中。
+  - 位置：第 39 段
+  - 文本：摘要
+  - 期望：center
+  - 实际：
+- **WARNING** `abstract.cn.title.font`：中文摘要标题应使用宋体。
+  - 位置：第 39 段
+  - 文本：摘要
+  - 期望：宋体
+  - 实际：
+- **WARNING** `abstract.cn.title.size`：中文摘要标题应为二号字。
+  - 位置：第 39 段
+  - 文本：摘要
+  - 期望：44
+  - 实际：
+- **WARNING** `abstract.cn.title.bold`：中文摘要标题应加粗。
+  - 位置：第 39 段
+  - 文本：摘要
+  - 期望：bold=true
+  - 实际：
+- **ERROR** `abstract.cn.page_break`：中文摘要标题前应分页。
+  - 位置：第 39 段
+  - 文本：摘要
+  - 期望：pageBreakBefore
+  - 实际：missing
+- **ERROR** `abstract.en.title.style`：英文摘要标题应使用不编号章标题样式。
+  - 位置：第 45 段
+  - 文本：ABSTRACT
+  - 期望：36
+  - 实际：2
+- **ERROR** `abstract.en.title.align`：英文摘要标题应居中。
+  - 位置：第 45 段
+  - 文本：ABSTRACT
+  - 期望：center
+  - 实际：
+- **WARNING** `abstract.en.title.font`：英文摘要标题应使用 Times New Roman。
+  - 位置：第 45 段
+  - 文本：ABSTRACT
+  - 期望：Times New Roman
+  - 实际：
+- **WARNING** `abstract.en.title.size`：英文摘要标题应为二号字。
+  - 位置：第 45 段
+  - 文本：ABSTRACT
+  - 期望：44
+  - 实际：
+- **WARNING** `abstract.en.title.bold`：英文摘要标题应加粗。
+  - 位置：第 45 段
+  - 文本：ABSTRACT
+  - 期望：bold=true
+  - 实际：
+- **ERROR** `abstract.en.page_break`：英文摘要标题前应分页。
+  - 位置：第 45 段
+  - 文本：ABSTRACT
+  - 期望：pageBreakBefore
+  - 实际：missing
+- **WARNING** `abstract.cn.keywords.before`：中文关键词段前应为 0.2 行。
+  - 位置：第 44 段
+  - 文本：关键词： 工程图纸检索，CLIP，参数高效微调，无清洗注意力路线，结构重排序，OCR，多模态检索
+  - 期望：beforeLines=20
+  - 实际：beforeLines=None
+- **WARNING** `abstract.en.keywords.before`：英文关键词段前应为 0.2 行。
+  - 位置：第 50 段
+  - 文本：KEY WORDS: Engineering Drawing Retrieval; CLIP; Parameter-Efficient Fine-Tuning; No-Cleaning Attention Route; Structure-Aware Re-Ranking; OCR; Multimodal Retrieval
+  - 期望：beforeLines=20
+  - 实际：beforeLines=None
+- **WARNING** `backmatter.style36.based_on`：不编号章标题样式仍继承其他样式，可能导致段前段后显示异常。
+  - 位置：文档级
+  - 期望：basedOn 为空
+  - 实际：1
+- **ERROR** `backmatter.style`：参考文献 应使用不编号章标题样式。
+  - 位置：第 608 段
+  - 文本：参考文献
+  - 期望：36
+  - 实际：2
+- **ERROR** `backmatter.align`：参考文献 应居中。
+  - 位置：第 608 段
+  - 文本：参考文献
+  - 期望：center
+  - 实际：
+- **ERROR** `backmatter.page_break`：参考文献 前应分页。
+  - 位置：第 608 段
+  - 文本：参考文献
+  - 期望：pageBreakBefore
+  - 实际：missing
+- **ERROR** `backmatter.before`：参考文献 段前应为 30 磅。
+  - 位置：第 608 段
+  - 文本：参考文献
+  - 期望：before=600
+  - 实际：before=None
+- **ERROR** `backmatter.after`：参考文献 段后应为 30 磅。
+  - 位置：第 608 段
+  - 文本：参考文献
+  - 期望：after=600
+  - 实际：after=None
+- **ERROR** `backmatter.line`：参考文献 应为单倍行距。
+  - 位置：第 608 段
+  - 文本：参考文献
+  - 期望：line=240
+  - 实际：line=None
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 609 段
+  - 文本：[1] 	Radford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 609 段
+  - 文本：[1] 	Radford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **WARNING** `bibliography.english.et_al`：英文参考文献多人作者应使用 et al.。
+  - 位置：第 609 段
+  - 文本：[1] 	Radford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763.
+  - 期望：et al.
+  - 实际：[1] Radford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763.
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 610 段
+  - 文本：[2] 	Zhang C, Liu J. Content Based Deep Learning Image Retrieval: A Survey[J]. Proceedings of the 2023 9th International Conference on Communication and Information Processing, 2023: 158-163.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 610 段
+  - 文本：[2] 	Zhang C, Liu J. Content Based Deep Learning Image Retrieval: A Survey[J]. Proceedings of the 2023 9th International Conference on Communication and Information Processing, 2023: 158-163.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 611 段
+  - 文本：[3] 	刘海桥, 刘萌, 龚子超, 等. 基于深度学习的图像匹配方法综述[J]. 航空学报, 2024, 45(3).
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 611 段
+  - 文本：[3] 	刘海桥, 刘萌, 龚子超, 等. 基于深度学习的图像匹配方法综述[J]. 航空学报, 2024, 45(3).
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 612 段
+  - 文本：[4] 	Han Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 612 段
+  - 文本：[4] 	Han Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **WARNING** `bibliography.english.et_al`：英文参考文献多人作者应使用 et al.。
+  - 位置：第 612 段
+  - 文本：[4] 	Han Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741.
+  - 期望：et al.
+  - 实际：[4] Han Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741.
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 613 段
+  - 文本：[5] 	Sain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 613 段
+  - 文本：[5] 	Sain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **WARNING** `bibliography.english.et_al`：英文参考文献多人作者应使用 et al.。
+  - 位置：第 613 段
+  - 文本：[5] 	Sain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775.
+  - 期望：et al.
+  - 实际：[5] Sain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775.
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 614 段
+  - 文本：[6] 	Gao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 614 段
+  - 文本：[6] 	Gao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **WARNING** `bibliography.english.et_al`：英文参考文献多人作者应使用 et al.。
+  - 位置：第 614 段
+  - 文本：[6] 	Gao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595.
+  - 期望：et al.
+  - 实际：[6] Gao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595.
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 615 段
+  - 文本：[7] 	Zhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 615 段
+  - 文本：[7] 	Zhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **WARNING** `bibliography.english.et_al`：英文参考文献多人作者应使用 et al.。
+  - 位置：第 615 段
+  - 文本：[7] 	Zhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348.
+  - 期望：et al.
+  - 实际：[7] Zhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348.
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 616 段
+  - 文本：[8] 	Mahajan S N, Muthuganapathy R. OrthoCAD-322K: A Cross-Modal Approach for Retrieving 3D CAD Models From Orthographic Views Using a Graph-Based Framework on a Developed Large-Scale Dataset[J]. Computers & Graphics, 2025: 104357.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 616 段
+  - 文本：[8] 	Mahajan S N, Muthuganapathy R. OrthoCAD-322K: A Cross-Modal Approach for Retrieving 3D CAD Models From Orthographic Views Using a Graph-Based Framework on a Developed Large-Scale Dataset[J]. Computers & Graphics, 2025: 104357.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 617 段
+  - 文本：[9] 	Heidari N, Iosifidis A. Geometric Deep Learning for Computer-Aided Design: A Survey[J]. IEEE Access, 2025.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 617 段
+  - 文本：[9] 	Heidari N, Iosifidis A. Geometric Deep Learning for Computer-Aided Design: A Survey[J]. IEEE Access, 2025.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 618 段
+  - 文本：[10] 	Malkov Y A, Yashunin D A. Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020, 42(4): 824-836.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 618 段
+  - 文本：[10] 	Malkov Y A, Yashunin D A. Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020, 42(4): 824-836.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 619 段
+  - 文本：[11] 	Pan J, Wang J, Li G. Survey of Vector Database Management Systems[J]. The VLDB Journal, 2024, 33(5): 1591-1615.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 619 段
+  - 文本：[11] 	Pan J, Wang J, Li G. Survey of Vector Database Management Systems[J]. The VLDB Journal, 2024, 33(5): 1591-1615.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 620 段
+  - 文本：[12] 	Qdrant Team. Qdrant: Vector Similarity Search Engine[Z]. 2024.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 620 段
+  - 文本：[12] 	Qdrant Team. Qdrant: Vector Similarity Search Engine[Z]. 2024.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 621 段
+  - 文本：[13] 	Johnson J, Douze M, Jégou H. Billion-Scale Similarity Search With GPUs[J]. IEEE Transactions on Big Data, 2019, 7(3): 535-547.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 621 段
+  - 文本：[13] 	Johnson J, Douze M, Jégou H. Billion-Scale Similarity Search With GPUs[J]. IEEE Transactions on Big Data, 2019, 7(3): 535-547.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 622 段
+  - 文本：[14] 	Vaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 622 段
+  - 文本：[14] 	Vaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **WARNING** `bibliography.english.et_al`：英文参考文献多人作者应使用 et al.。
+  - 位置：第 622 段
+  - 文本：[14] 	Vaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008.
+  - 期望：et al.
+  - 实际：[14] Vaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008.
+- **ERROR** `bibliography.style`：参考文献条目应使用参考文献段落样式。
+  - 位置：第 623 段
+  - 文本：[15] 	Selvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359.
+  - 期望：44
+  - 实际：Bibliography
+- **ERROR** `bibliography.indent`：参考文献条目应使用悬挂缩进，避免编号后大空白。
+  - 位置：第 623 段
+  - 文本：[15] 	Selvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359.
+  - 期望：left=420 hanging=420
+  - 实际：{}
+- **WARNING** `bibliography.english.et_al`：英文参考文献多人作者应使用 et al.。
+  - 位置：第 623 段
+  - 文本：[15] 	Selvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359.
+  - 期望：et al.
+  - 实际：[15] Selvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359.

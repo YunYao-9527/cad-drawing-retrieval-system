@@ -1,0 +1,57 @@
+\chapter*{附录}
+\addcontentsline{toc}{chapter}{附录}
+
+\section*{附录A 主要系统接口说明}
+\addcontentsline{toc}{section}{附录A 主要系统接口说明}
+
+结合系统实现与演示需求，本文工程原型对外提供了若干关键接口。其主要接口及功能说明如\cref{tab:appendix-api}所示。
+
+\begin{table}[H]
+  \centering
+  \caption{主要系统接口说明}
+  \label{tab:appendix-api}
+  \small
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabularx}{\textwidth}{lllX}
+    \toprule
+    序号 & 方法 & 路径 & 功能说明 \\
+    \midrule
+    1 & GET & \texttt{/} & 返回系统主页，用于前端检索界面展示。 \\
+    2 & GET & \texttt{/health} & 返回服务健康状态，用于基础可用性检查。 \\
+    3 & GET & \texttt{/metrics} & 返回系统监控指标，用于性能统计与运维观测。 \\
+    4 & POST & \texttt{/search} & 上传查询图纸并执行相似检索，返回候选结果与相似度分数。 \\
+    5 & GET & \texttt{/stats} & 获取当前图库规模、类别统计等信息。 \\
+    6 & GET/POST & \texttt{/api/images} & 支持图库图像查询与新增写入。 \\
+    7 & POST & \texttt{/api/initialize} & 执行系统初始化与基础数据准备。 \\
+    8 & POST & \texttt{/api/rebuild} & 触发图库索引重建。 \\
+    9 & GET & \texttt{/api/categories} & 返回类别列表与分类浏览信息。 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\section*{附录B 正式实验模式说明}
+\addcontentsline{toc}{section}{附录B 正式实验模式说明}
+
+为保证双主线实验过程的可复查性，本文对正式实验所涉及的 8 个模式进行归纳，具体如\cref{tab:appendix-modes}所示。
+
+\begin{table}[H]
+  \centering
+  \caption{正式实验模式说明}
+  \label{tab:appendix-modes}
+  \small
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabularx}{\textwidth}{llX}
+    \toprule
+    模式标识 & 对应名称 & 说明 \\
+    \midrule
+    \texttt{baseline} & 基础视觉检索 & 仅采用 CLIP 视觉向量进行相似度召回。 \\
+    \texttt{cleaning\_only} & YOLO Cleaning Only & 在基线基础上增加显式清洗，不进行结构重排。 \\
+    \texttt{masked\_pooling} & YOLO Cleaning + Masked Visual & 在清洗后加入掩码引导的局部视觉增强。 \\
+    \texttt{full\_model} & YOLO Cleaning + Structure & 在清洗路线中进一步引入结构重排序。 \\
+    \texttt{multimodal\_text} & YOLO Cleaning + Structure + OCR & 在清洗与结构增强基础上叠加 OCR 辅助重排。 \\
+    \texttt{attention\_visual} & Attention Visual (No Cleaning) & 不执行显式清洗，直接进行无清洗注意力式视觉增强。 \\
+    \texttt{attention\_structure} & Attention + Structure (No Cleaning) & 在无清洗注意力路线中引入结构重排序。 \\
+    \texttt{attention\_multimodal} & Attention + Structure + OCR (No Cleaning) & 在无清洗注意力与结构重排基础上叠加 OCR 辅助重排。 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}

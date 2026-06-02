@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'cad-retrieval'
+    static_configs:
+      - targets: ['cad-retrieval:5000']
+    metrics_path: '/metrics'
+

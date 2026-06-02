@@ -1,0 +1,94 @@
+# CAD drawing retrieval system configuration
+
+app:
+  name: "CAD图纸检索系统"
+  version: "2.1.0"
+  host: "127.0.0.1"
+  port: 5000
+  debug: false
+  threaded: true
+
+model:
+  finetuned_model_path: "D:\\workspace\\图纸检索项目\\数据集\\clip_model_deployment\\best_retrieval_clip.pth"
+  clip_model_name: "ViT-B/32"
+  embedding_dim: 512
+  device: "auto"
+
+gallery:
+  cad_drawing_dir: "D:\\workspace\\图纸检索项目\\数据集\\Dataset_img3"
+
+vector_db:
+  type: "qdrant"
+  persist_directory: "./chroma_db"
+  collection_name: "cad_drawings"
+  chroma:
+    persist_directory: "./chroma_db"
+  qdrant:
+    host: "localhost"
+    port: 6333
+    collection_name: "cad_drawings"
+  milvus:
+    host: "localhost"
+    port: 19530
+    collection_name: "cad_drawings"
+
+feature:
+  batch_size: 100
+  max_queue_size: 1000
+  async_enabled: true
+  gpu_memory_fraction: 0.8
+
+cleaning:
+  enabled: true
+  model_path: "D:\\workspace\\图纸检索项目\\数据集\\111_test\\补丁\\best.pt"
+  confidence: 0.25
+  iou: 0.45
+  padding: 5
+  fill_value: 255
+
+innovation:
+  adapter_type: "mlp"
+  enable_masked_pooling: true
+  enable_structure_rerank: true
+  structure_rerank_weight: 0.2
+  enable_ocr_text_fusion: true
+  ocr_fusion_strategy: "legacy"
+  ocr_text_weight: 0.08
+  ocr_clip_text_weight: 0.35
+  ocr_bonus_threshold: 0.55
+  ocr_candidate_multiplier: 6
+  ocr_rerank_topn: 30
+  ocr_identifier_bonus: 0.08
+  ocr_partial_identifier_bonus: 0.04
+  ocr_min_confidence: 0.5
+  ocr_max_text_length: 500
+  ocr_use_mask_regions: true
+  descriptor_grid_size: 16
+  attention_hidden_dim: 256
+  attention_heads: 4
+  attention_dropout: 0.1
+
+retrieval:
+  default_top_k: 10
+  max_top_k: 1000
+  similarity_threshold: 0.0
+  enable_refinement: true
+
+logging:
+  level: "INFO"
+  format: "json"
+  file: "logs/app.log"
+  max_bytes: 10485760
+  backup_count: 5
+  enable_console: true
+
+monitoring:
+  enable_prometheus: true
+  prometheus_port: 9090
+  metrics_path: "/metrics"
+  enable_performance_tracking: true
+
+health:
+  enable_health_check: true
+  health_check_interval: 30
+  enable_detailed_checks: true

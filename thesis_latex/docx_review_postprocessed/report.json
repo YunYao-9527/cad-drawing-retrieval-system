@@ -1,0 +1,5443 @@
+{
+  "docx_path": "D:\\workspace\\图纸检索项目\\数据集\\111_test\\0version_1\\thesis_latex\\main.docx",
+  "error_count": 587,
+  "warning_count": 17,
+  "issues": [
+    {
+      "severity": "warning",
+      "rule_id": "toc.field.missing",
+      "message": "没有检测到 Word 自动目录字段，请确认目录不是静态文本。",
+      "paragraph_index": null,
+      "text": null,
+      "expected": "TOC \\o \"1-3\" \\h \\u",
+      "actual": "未检测到 TOC 字段"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 299,
+      "text": "0.8682",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 299,
+      "text": "0.8682",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 299,
+      "text": "0.8682",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 299,
+      "text": "0.8682",
+      "expected": "1.1  标题",
+      "actual": "0.8682"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 300,
+      "text": "0.9023",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 300,
+      "text": "0.9023",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 300,
+      "text": "0.9023",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 300,
+      "text": "0.9023",
+      "expected": "1.1  标题",
+      "actual": "0.9023"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 301,
+      "text": "0.9159",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 301,
+      "text": "0.9159",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 301,
+      "text": "0.9159",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 301,
+      "text": "0.9159",
+      "expected": "1.1  标题",
+      "actual": "0.9159"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 302,
+      "text": "0.6191",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 302,
+      "text": "0.6191",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 302,
+      "text": "0.6191",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 302,
+      "text": "0.6191",
+      "expected": "1.1  标题",
+      "actual": "0.6191"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 303,
+      "text": "0.6814",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 303,
+      "text": "0.6814",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 303,
+      "text": "0.6814",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 303,
+      "text": "0.6814",
+      "expected": "1.1  标题",
+      "actual": "0.6814"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 304,
+      "text": "0.3676",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 304,
+      "text": "0.3676",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 304,
+      "text": "0.3676",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 304,
+      "text": "0.3676",
+      "expected": "1.1  标题",
+      "actual": "0.3676"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 305,
+      "text": "0.4079",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 305,
+      "text": "0.4079",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 305,
+      "text": "0.4079",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 305,
+      "text": "0.4079",
+      "expected": "1.1  标题",
+      "actual": "0.4079"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 306,
+      "text": "0.5773",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 306,
+      "text": "0.5773",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 306,
+      "text": "0.5773",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 306,
+      "text": "0.5773",
+      "expected": "1.1  标题",
+      "actual": "0.5773"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 308,
+      "text": "0.8682",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 308,
+      "text": "0.8682",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 308,
+      "text": "0.8682",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 308,
+      "text": "0.8682",
+      "expected": "1.1  标题",
+      "actual": "0.8682"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 309,
+      "text": "0.9023",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 309,
+      "text": "0.9023",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 309,
+      "text": "0.9023",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 309,
+      "text": "0.9023",
+      "expected": "1.1  标题",
+      "actual": "0.9023"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 310,
+      "text": "0.9159",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 310,
+      "text": "0.9159",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 310,
+      "text": "0.9159",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 310,
+      "text": "0.9159",
+      "expected": "1.1  标题",
+      "actual": "0.9159"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 311,
+      "text": "0.6191",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 311,
+      "text": "0.6191",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 311,
+      "text": "0.6191",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 311,
+      "text": "0.6191",
+      "expected": "1.1  标题",
+      "actual": "0.6191"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 312,
+      "text": "0.6814",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 312,
+      "text": "0.6814",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 312,
+      "text": "0.6814",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 312,
+      "text": "0.6814",
+      "expected": "1.1  标题",
+      "actual": "0.6814"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 313,
+      "text": "0.3676",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 313,
+      "text": "0.3676",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 313,
+      "text": "0.3676",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 313,
+      "text": "0.3676",
+      "expected": "1.1  标题",
+      "actual": "0.3676"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 314,
+      "text": "0.4079",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 314,
+      "text": "0.4079",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 314,
+      "text": "0.4079",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 314,
+      "text": "0.4079",
+      "expected": "1.1  标题",
+      "actual": "0.4079"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 315,
+      "text": "0.5773",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 315,
+      "text": "0.5773",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 315,
+      "text": "0.5773",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 315,
+      "text": "0.5773",
+      "expected": "1.1  标题",
+      "actual": "0.5773"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 317,
+      "text": "0.8614",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 317,
+      "text": "0.8614",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 317,
+      "text": "0.8614",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 317,
+      "text": "0.8614",
+      "expected": "1.1  标题",
+      "actual": "0.8614"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 318,
+      "text": "0.8909",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 318,
+      "text": "0.8909",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 318,
+      "text": "0.8909",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 318,
+      "text": "0.8909",
+      "expected": "1.1  标题",
+      "actual": "0.8909"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 319,
+      "text": "0.9045",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 319,
+      "text": "0.9045",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 319,
+      "text": "0.9045",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 319,
+      "text": "0.9045",
+      "expected": "1.1  标题",
+      "actual": "0.9045"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 320,
+      "text": "0.5374",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 320,
+      "text": "0.5374",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 320,
+      "text": "0.5374",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 320,
+      "text": "0.5374",
+      "expected": "1.1  标题",
+      "actual": "0.5374"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 321,
+      "text": "0.6128",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 321,
+      "text": "0.6128",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 321,
+      "text": "0.6128",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 321,
+      "text": "0.6128",
+      "expected": "1.1  标题",
+      "actual": "0.6128"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 322,
+      "text": "0.3016",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 322,
+      "text": "0.3016",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 322,
+      "text": "0.3016",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 322,
+      "text": "0.3016",
+      "expected": "1.1  标题",
+      "actual": "0.3016"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 323,
+      "text": "0.3414",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 323,
+      "text": "0.3414",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 323,
+      "text": "0.3414",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 323,
+      "text": "0.3414",
+      "expected": "1.1  标题",
+      "actual": "0.3414"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 324,
+      "text": "0.6442",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 324,
+      "text": "0.6442",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 324,
+      "text": "0.6442",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 324,
+      "text": "0.6442",
+      "expected": "1.1  标题",
+      "actual": "0.6442"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 326,
+      "text": "0.8795",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 326,
+      "text": "0.8795",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 326,
+      "text": "0.8795",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 326,
+      "text": "0.8795",
+      "expected": "1.1  标题",
+      "actual": "0.8795"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 327,
+      "text": "0.9114",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 327,
+      "text": "0.9114",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 327,
+      "text": "0.9114",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 327,
+      "text": "0.9114",
+      "expected": "1.1  标题",
+      "actual": "0.9114"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 328,
+      "text": "0.9205",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 328,
+      "text": "0.9205",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 328,
+      "text": "0.9205",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 328,
+      "text": "0.9205",
+      "expected": "1.1  标题",
+      "actual": "0.9205"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 329,
+      "text": "0.5629",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 329,
+      "text": "0.5629",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 329,
+      "text": "0.5629",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 329,
+      "text": "0.5629",
+      "expected": "1.1  标题",
+      "actual": "0.5629"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 330,
+      "text": "0.6396",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 330,
+      "text": "0.6396",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 330,
+      "text": "0.6396",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 330,
+      "text": "0.6396",
+      "expected": "1.1  标题",
+      "actual": "0.6396"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 331,
+      "text": "0.3026",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 331,
+      "text": "0.3026",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 331,
+      "text": "0.3026",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 331,
+      "text": "0.3026",
+      "expected": "1.1  标题",
+      "actual": "0.3026"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 332,
+      "text": "0.3458",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 332,
+      "text": "0.3458",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 332,
+      "text": "0.3458",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 332,
+      "text": "0.3458",
+      "expected": "1.1  标题",
+      "actual": "0.3458"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 333,
+      "text": "0.6409",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 333,
+      "text": "0.6409",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 333,
+      "text": "0.6409",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 333,
+      "text": "0.6409",
+      "expected": "1.1  标题",
+      "actual": "0.6409"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 335,
+      "text": "0.8773",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 335,
+      "text": "0.8773",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 335,
+      "text": "0.8773",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 335,
+      "text": "0.8773",
+      "expected": "1.1  标题",
+      "actual": "0.8773"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 336,
+      "text": "0.9114",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 336,
+      "text": "0.9114",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 336,
+      "text": "0.9114",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 336,
+      "text": "0.9114",
+      "expected": "1.1  标题",
+      "actual": "0.9114"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 337,
+      "text": "0.9205",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 337,
+      "text": "0.9205",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 337,
+      "text": "0.9205",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 337,
+      "text": "0.9205",
+      "expected": "1.1  标题",
+      "actual": "0.9205"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 338,
+      "text": "0.5657",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 338,
+      "text": "0.5657",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 338,
+      "text": "0.5657",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 338,
+      "text": "0.5657",
+      "expected": "1.1  标题",
+      "actual": "0.5657"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 339,
+      "text": "0.6421",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 339,
+      "text": "0.6421",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 339,
+      "text": "0.6421",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 339,
+      "text": "0.6421",
+      "expected": "1.1  标题",
+      "actual": "0.6421"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 340,
+      "text": "0.3026",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 340,
+      "text": "0.3026",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 340,
+      "text": "0.3026",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 340,
+      "text": "0.3026",
+      "expected": "1.1  标题",
+      "actual": "0.3026"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 341,
+      "text": "0.3458",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 341,
+      "text": "0.3458",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 341,
+      "text": "0.3458",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 341,
+      "text": "0.3458",
+      "expected": "1.1  标题",
+      "actual": "0.3458"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 342,
+      "text": "0.6409",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 342,
+      "text": "0.6409",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 342,
+      "text": "0.6409",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 342,
+      "text": "0.6409",
+      "expected": "1.1  标题",
+      "actual": "0.6409"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 344,
+      "text": "0.8750",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 344,
+      "text": "0.8750",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 344,
+      "text": "0.8750",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 344,
+      "text": "0.8750",
+      "expected": "1.1  标题",
+      "actual": "0.8750"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 345,
+      "text": "0.9114",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 345,
+      "text": "0.9114",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 345,
+      "text": "0.9114",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 345,
+      "text": "0.9114",
+      "expected": "1.1  标题",
+      "actual": "0.9114"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 346,
+      "text": "0.9205",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 346,
+      "text": "0.9205",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 346,
+      "text": "0.9205",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 346,
+      "text": "0.9205",
+      "expected": "1.1  标题",
+      "actual": "0.9205"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 347,
+      "text": "0.6031",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 347,
+      "text": "0.6031",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 347,
+      "text": "0.6031",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 347,
+      "text": "0.6031",
+      "expected": "1.1  标题",
+      "actual": "0.6031"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 348,
+      "text": "0.6714",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 348,
+      "text": "0.6714",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 348,
+      "text": "0.6714",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 348,
+      "text": "0.6714",
+      "expected": "1.1  标题",
+      "actual": "0.6714"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 349,
+      "text": "0.3648",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 349,
+      "text": "0.3648",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 349,
+      "text": "0.3648",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 349,
+      "text": "0.3648",
+      "expected": "1.1  标题",
+      "actual": "0.3648"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 350,
+      "text": "0.4099",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 350,
+      "text": "0.4099",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 350,
+      "text": "0.4099",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 350,
+      "text": "0.4099",
+      "expected": "1.1  标题",
+      "actual": "0.4099"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 351,
+      "text": "0.5757",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 351,
+      "text": "0.5757",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 351,
+      "text": "0.5757",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 351,
+      "text": "0.5757",
+      "expected": "1.1  标题",
+      "actual": "0.5757"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 353,
+      "text": "0.8977",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 353,
+      "text": "0.8977",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 353,
+      "text": "0.8977",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 353,
+      "text": "0.8977",
+      "expected": "1.1  标题",
+      "actual": "0.8977"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 354,
+      "text": "0.9318",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 354,
+      "text": "0.9318",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 354,
+      "text": "0.9318",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 354,
+      "text": "0.9318",
+      "expected": "1.1  标题",
+      "actual": "0.9318"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 355,
+      "text": "0.9500",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 355,
+      "text": "0.9500",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 355,
+      "text": "0.9500",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 355,
+      "text": "0.9500",
+      "expected": "1.1  标题",
+      "actual": "0.9500"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 356,
+      "text": "0.6141",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 356,
+      "text": "0.6141",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 356,
+      "text": "0.6141",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 356,
+      "text": "0.6141",
+      "expected": "1.1  标题",
+      "actual": "0.6141"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 357,
+      "text": "0.6882",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 357,
+      "text": "0.6882",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 357,
+      "text": "0.6882",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 357,
+      "text": "0.6882",
+      "expected": "1.1  标题",
+      "actual": "0.6882"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 358,
+      "text": "0.3655",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 358,
+      "text": "0.3655",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 358,
+      "text": "0.3655",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 358,
+      "text": "0.3655",
+      "expected": "1.1  标题",
+      "actual": "0.3655"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 359,
+      "text": "0.4158",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 359,
+      "text": "0.4158",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 359,
+      "text": "0.4158",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 359,
+      "text": "0.4158",
+      "expected": "1.1  标题",
+      "actual": "0.4158"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 360,
+      "text": "0.5727",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 360,
+      "text": "0.5727",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 360,
+      "text": "0.5727",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 360,
+      "text": "0.5727",
+      "expected": "1.1  标题",
+      "actual": "0.5727"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 362,
+      "text": "0.8705",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 362,
+      "text": "0.8705",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 362,
+      "text": "0.8705",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 362,
+      "text": "0.8705",
+      "expected": "1.1  标题",
+      "actual": "0.8705"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 363,
+      "text": "0.9273",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 363,
+      "text": "0.9273",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 363,
+      "text": "0.9273",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 363,
+      "text": "0.9273",
+      "expected": "1.1  标题",
+      "actual": "0.9273"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 364,
+      "text": "0.9477",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 364,
+      "text": "0.9477",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 364,
+      "text": "0.9477",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 364,
+      "text": "0.9477",
+      "expected": "1.1  标题",
+      "actual": "0.9477"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 365,
+      "text": "0.6116",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 365,
+      "text": "0.6116",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 365,
+      "text": "0.6116",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 365,
+      "text": "0.6116",
+      "expected": "1.1  标题",
+      "actual": "0.6116"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 366,
+      "text": "0.6845",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 366,
+      "text": "0.6845",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 366,
+      "text": "0.6845",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 366,
+      "text": "0.6845",
+      "expected": "1.1  标题",
+      "actual": "0.6845"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 367,
+      "text": "0.3655",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 367,
+      "text": "0.3655",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 367,
+      "text": "0.3655",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 367,
+      "text": "0.3655",
+      "expected": "1.1  标题",
+      "actual": "0.3655"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 368,
+      "text": "0.4158",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 368,
+      "text": "0.4158",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 368,
+      "text": "0.4158",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 368,
+      "text": "0.4158",
+      "expected": "1.1  标题",
+      "actual": "0.4158"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 369,
+      "text": "0.5726",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 369,
+      "text": "0.5726",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 369,
+      "text": "0.5726",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 369,
+      "text": "0.5726",
+      "expected": "1.1  标题",
+      "actual": "0.5726"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 385,
+      "text": "0.8682",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 385,
+      "text": "0.8682",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 385,
+      "text": "0.8682",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 385,
+      "text": "0.8682",
+      "expected": "1.1  标题",
+      "actual": "0.8682"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 386,
+      "text": "0.9023",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 386,
+      "text": "0.9023",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 386,
+      "text": "0.9023",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 386,
+      "text": "0.9023",
+      "expected": "1.1  标题",
+      "actual": "0.9023"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 387,
+      "text": "0.9159",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 387,
+      "text": "0.9159",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 387,
+      "text": "0.9159",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 387,
+      "text": "0.9159",
+      "expected": "1.1  标题",
+      "actual": "0.9159"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 388,
+      "text": "0.6191",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 388,
+      "text": "0.6191",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 388,
+      "text": "0.6191",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 388,
+      "text": "0.6191",
+      "expected": "1.1  标题",
+      "actual": "0.6191"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 389,
+      "text": "0.6814",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 389,
+      "text": "0.6814",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 389,
+      "text": "0.6814",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 389,
+      "text": "0.6814",
+      "expected": "1.1  标题",
+      "actual": "0.6814"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 390,
+      "text": "0.3676",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 390,
+      "text": "0.3676",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 390,
+      "text": "0.3676",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 390,
+      "text": "0.3676",
+      "expected": "1.1  标题",
+      "actual": "0.3676"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 391,
+      "text": "0.4079",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 391,
+      "text": "0.4079",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 391,
+      "text": "0.4079",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 391,
+      "text": "0.4079",
+      "expected": "1.1  标题",
+      "actual": "0.4079"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 392,
+      "text": "0.5773",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 392,
+      "text": "0.5773",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 392,
+      "text": "0.5773",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 392,
+      "text": "0.5773",
+      "expected": "1.1  标题",
+      "actual": "0.5773"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 394,
+      "text": "0.8682",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 394,
+      "text": "0.8682",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 394,
+      "text": "0.8682",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 394,
+      "text": "0.8682",
+      "expected": "1.1  标题",
+      "actual": "0.8682"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 395,
+      "text": "0.9023",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 395,
+      "text": "0.9023",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 395,
+      "text": "0.9023",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 395,
+      "text": "0.9023",
+      "expected": "1.1  标题",
+      "actual": "0.9023"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 396,
+      "text": "0.9159",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 396,
+      "text": "0.9159",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 396,
+      "text": "0.9159",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 396,
+      "text": "0.9159",
+      "expected": "1.1  标题",
+      "actual": "0.9159"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 397,
+      "text": "0.6191",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 397,
+      "text": "0.6191",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 397,
+      "text": "0.6191",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 397,
+      "text": "0.6191",
+      "expected": "1.1  标题",
+      "actual": "0.6191"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 398,
+      "text": "0.6814",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 398,
+      "text": "0.6814",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 398,
+      "text": "0.6814",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 398,
+      "text": "0.6814",
+      "expected": "1.1  标题",
+      "actual": "0.6814"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 399,
+      "text": "0.3676",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 399,
+      "text": "0.3676",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 399,
+      "text": "0.3676",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 399,
+      "text": "0.3676",
+      "expected": "1.1  标题",
+      "actual": "0.3676"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 400,
+      "text": "0.4079",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 400,
+      "text": "0.4079",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 400,
+      "text": "0.4079",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 400,
+      "text": "0.4079",
+      "expected": "1.1  标题",
+      "actual": "0.4079"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 401,
+      "text": "0.5773",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 401,
+      "text": "0.5773",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 401,
+      "text": "0.5773",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 401,
+      "text": "0.5773",
+      "expected": "1.1  标题",
+      "actual": "0.5773"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 403,
+      "text": "0.8614",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 403,
+      "text": "0.8614",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 403,
+      "text": "0.8614",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 403,
+      "text": "0.8614",
+      "expected": "1.1  标题",
+      "actual": "0.8614"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 404,
+      "text": "0.8909",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 404,
+      "text": "0.8909",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 404,
+      "text": "0.8909",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 404,
+      "text": "0.8909",
+      "expected": "1.1  标题",
+      "actual": "0.8909"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 405,
+      "text": "0.9045",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 405,
+      "text": "0.9045",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 405,
+      "text": "0.9045",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 405,
+      "text": "0.9045",
+      "expected": "1.1  标题",
+      "actual": "0.9045"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 406,
+      "text": "0.5374",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 406,
+      "text": "0.5374",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 406,
+      "text": "0.5374",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 406,
+      "text": "0.5374",
+      "expected": "1.1  标题",
+      "actual": "0.5374"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 407,
+      "text": "0.6128",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 407,
+      "text": "0.6128",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 407,
+      "text": "0.6128",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 407,
+      "text": "0.6128",
+      "expected": "1.1  标题",
+      "actual": "0.6128"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 408,
+      "text": "0.3016",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 408,
+      "text": "0.3016",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 408,
+      "text": "0.3016",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 408,
+      "text": "0.3016",
+      "expected": "1.1  标题",
+      "actual": "0.3016"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 409,
+      "text": "0.3414",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 409,
+      "text": "0.3414",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 409,
+      "text": "0.3414",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 409,
+      "text": "0.3414",
+      "expected": "1.1  标题",
+      "actual": "0.3414"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 410,
+      "text": "0.6442",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 410,
+      "text": "0.6442",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 410,
+      "text": "0.6442",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 410,
+      "text": "0.6442",
+      "expected": "1.1  标题",
+      "actual": "0.6442"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 412,
+      "text": "0.8795",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 412,
+      "text": "0.8795",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 412,
+      "text": "0.8795",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 412,
+      "text": "0.8795",
+      "expected": "1.1  标题",
+      "actual": "0.8795"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 413,
+      "text": "0.9114",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 413,
+      "text": "0.9114",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 413,
+      "text": "0.9114",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 413,
+      "text": "0.9114",
+      "expected": "1.1  标题",
+      "actual": "0.9114"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 414,
+      "text": "0.9205",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 414,
+      "text": "0.9205",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 414,
+      "text": "0.9205",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 414,
+      "text": "0.9205",
+      "expected": "1.1  标题",
+      "actual": "0.9205"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 415,
+      "text": "0.5629",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 415,
+      "text": "0.5629",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 415,
+      "text": "0.5629",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 415,
+      "text": "0.5629",
+      "expected": "1.1  标题",
+      "actual": "0.5629"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 416,
+      "text": "0.6396",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 416,
+      "text": "0.6396",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 416,
+      "text": "0.6396",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 416,
+      "text": "0.6396",
+      "expected": "1.1  标题",
+      "actual": "0.6396"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 417,
+      "text": "0.3026",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 417,
+      "text": "0.3026",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 417,
+      "text": "0.3026",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 417,
+      "text": "0.3026",
+      "expected": "1.1  标题",
+      "actual": "0.3026"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 418,
+      "text": "0.3458",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 418,
+      "text": "0.3458",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 418,
+      "text": "0.3458",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 418,
+      "text": "0.3458",
+      "expected": "1.1  标题",
+      "actual": "0.3458"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 419,
+      "text": "0.6409",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 419,
+      "text": "0.6409",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 419,
+      "text": "0.6409",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 419,
+      "text": "0.6409",
+      "expected": "1.1  标题",
+      "actual": "0.6409"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 421,
+      "text": "0.8773",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 421,
+      "text": "0.8773",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 421,
+      "text": "0.8773",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 421,
+      "text": "0.8773",
+      "expected": "1.1  标题",
+      "actual": "0.8773"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 422,
+      "text": "0.9114",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 422,
+      "text": "0.9114",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 422,
+      "text": "0.9114",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 422,
+      "text": "0.9114",
+      "expected": "1.1  标题",
+      "actual": "0.9114"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 423,
+      "text": "0.9205",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 423,
+      "text": "0.9205",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 423,
+      "text": "0.9205",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 423,
+      "text": "0.9205",
+      "expected": "1.1  标题",
+      "actual": "0.9205"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 424,
+      "text": "0.5657",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 424,
+      "text": "0.5657",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 424,
+      "text": "0.5657",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 424,
+      "text": "0.5657",
+      "expected": "1.1  标题",
+      "actual": "0.5657"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 425,
+      "text": "0.6421",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 425,
+      "text": "0.6421",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 425,
+      "text": "0.6421",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 425,
+      "text": "0.6421",
+      "expected": "1.1  标题",
+      "actual": "0.6421"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 426,
+      "text": "0.3026",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 426,
+      "text": "0.3026",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 426,
+      "text": "0.3026",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 426,
+      "text": "0.3026",
+      "expected": "1.1  标题",
+      "actual": "0.3026"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 427,
+      "text": "0.3458",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 427,
+      "text": "0.3458",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 427,
+      "text": "0.3458",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 427,
+      "text": "0.3458",
+      "expected": "1.1  标题",
+      "actual": "0.3458"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 428,
+      "text": "0.6409",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 428,
+      "text": "0.6409",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 428,
+      "text": "0.6409",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 428,
+      "text": "0.6409",
+      "expected": "1.1  标题",
+      "actual": "0.6409"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 448,
+      "text": "0.8682",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 448,
+      "text": "0.8682",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 448,
+      "text": "0.8682",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 448,
+      "text": "0.8682",
+      "expected": "1.1  标题",
+      "actual": "0.8682"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 449,
+      "text": "0.9023",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 449,
+      "text": "0.9023",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 449,
+      "text": "0.9023",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 449,
+      "text": "0.9023",
+      "expected": "1.1  标题",
+      "actual": "0.9023"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 450,
+      "text": "0.9159",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 450,
+      "text": "0.9159",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 450,
+      "text": "0.9159",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 450,
+      "text": "0.9159",
+      "expected": "1.1  标题",
+      "actual": "0.9159"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 451,
+      "text": "0.6191",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 451,
+      "text": "0.6191",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 451,
+      "text": "0.6191",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 451,
+      "text": "0.6191",
+      "expected": "1.1  标题",
+      "actual": "0.6191"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 452,
+      "text": "0.6814",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 452,
+      "text": "0.6814",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 452,
+      "text": "0.6814",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 452,
+      "text": "0.6814",
+      "expected": "1.1  标题",
+      "actual": "0.6814"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 453,
+      "text": "0.3676",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 453,
+      "text": "0.3676",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 453,
+      "text": "0.3676",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 453,
+      "text": "0.3676",
+      "expected": "1.1  标题",
+      "actual": "0.3676"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 454,
+      "text": "0.4079",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 454,
+      "text": "0.4079",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 454,
+      "text": "0.4079",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 454,
+      "text": "0.4079",
+      "expected": "1.1  标题",
+      "actual": "0.4079"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 455,
+      "text": "0.5773",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 455,
+      "text": "0.5773",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 455,
+      "text": "0.5773",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 455,
+      "text": "0.5773",
+      "expected": "1.1  标题",
+      "actual": "0.5773"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 457,
+      "text": "0.8750",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 457,
+      "text": "0.8750",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 457,
+      "text": "0.8750",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 457,
+      "text": "0.8750",
+      "expected": "1.1  标题",
+      "actual": "0.8750"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 458,
+      "text": "0.9114",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 458,
+      "text": "0.9114",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 458,
+      "text": "0.9114",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 458,
+      "text": "0.9114",
+      "expected": "1.1  标题",
+      "actual": "0.9114"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 459,
+      "text": "0.9205",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 459,
+      "text": "0.9205",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 459,
+      "text": "0.9205",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 459,
+      "text": "0.9205",
+      "expected": "1.1  标题",
+      "actual": "0.9205"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 460,
+      "text": "0.6031",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 460,
+      "text": "0.6031",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 460,
+      "text": "0.6031",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 460,
+      "text": "0.6031",
+      "expected": "1.1  标题",
+      "actual": "0.6031"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 461,
+      "text": "0.6714",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 461,
+      "text": "0.6714",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 461,
+      "text": "0.6714",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 461,
+      "text": "0.6714",
+      "expected": "1.1  标题",
+      "actual": "0.6714"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 462,
+      "text": "0.3648",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 462,
+      "text": "0.3648",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 462,
+      "text": "0.3648",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 462,
+      "text": "0.3648",
+      "expected": "1.1  标题",
+      "actual": "0.3648"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 463,
+      "text": "0.4099",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 463,
+      "text": "0.4099",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 463,
+      "text": "0.4099",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 463,
+      "text": "0.4099",
+      "expected": "1.1  标题",
+      "actual": "0.4099"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 464,
+      "text": "0.5757",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 464,
+      "text": "0.5757",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 464,
+      "text": "0.5757",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 464,
+      "text": "0.5757",
+      "expected": "1.1  标题",
+      "actual": "0.5757"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 466,
+      "text": "0.8977",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 466,
+      "text": "0.8977",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 466,
+      "text": "0.8977",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 466,
+      "text": "0.8977",
+      "expected": "1.1  标题",
+      "actual": "0.8977"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 467,
+      "text": "0.9318",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 467,
+      "text": "0.9318",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 467,
+      "text": "0.9318",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 467,
+      "text": "0.9318",
+      "expected": "1.1  标题",
+      "actual": "0.9318"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 468,
+      "text": "0.9500",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 468,
+      "text": "0.9500",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 468,
+      "text": "0.9500",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 468,
+      "text": "0.9500",
+      "expected": "1.1  标题",
+      "actual": "0.9500"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 469,
+      "text": "0.6141",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 469,
+      "text": "0.6141",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 469,
+      "text": "0.6141",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 469,
+      "text": "0.6141",
+      "expected": "1.1  标题",
+      "actual": "0.6141"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 470,
+      "text": "0.6882",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 470,
+      "text": "0.6882",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 470,
+      "text": "0.6882",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 470,
+      "text": "0.6882",
+      "expected": "1.1  标题",
+      "actual": "0.6882"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 471,
+      "text": "0.3655",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 471,
+      "text": "0.3655",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 471,
+      "text": "0.3655",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 471,
+      "text": "0.3655",
+      "expected": "1.1  标题",
+      "actual": "0.3655"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 472,
+      "text": "0.4158",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 472,
+      "text": "0.4158",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 472,
+      "text": "0.4158",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 472,
+      "text": "0.4158",
+      "expected": "1.1  标题",
+      "actual": "0.4158"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 473,
+      "text": "0.5727",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 473,
+      "text": "0.5727",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 473,
+      "text": "0.5727",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 473,
+      "text": "0.5727",
+      "expected": "1.1  标题",
+      "actual": "0.5727"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 475,
+      "text": "0.8705",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 475,
+      "text": "0.8705",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 475,
+      "text": "0.8705",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 475,
+      "text": "0.8705",
+      "expected": "1.1  标题",
+      "actual": "0.8705"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 476,
+      "text": "0.9273",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 476,
+      "text": "0.9273",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 476,
+      "text": "0.9273",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 476,
+      "text": "0.9273",
+      "expected": "1.1  标题",
+      "actual": "0.9273"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 477,
+      "text": "0.9477",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 477,
+      "text": "0.9477",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 477,
+      "text": "0.9477",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 477,
+      "text": "0.9477",
+      "expected": "1.1  标题",
+      "actual": "0.9477"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 478,
+      "text": "0.6116",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 478,
+      "text": "0.6116",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 478,
+      "text": "0.6116",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 478,
+      "text": "0.6116",
+      "expected": "1.1  标题",
+      "actual": "0.6116"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 479,
+      "text": "0.6845",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 479,
+      "text": "0.6845",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 479,
+      "text": "0.6845",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 479,
+      "text": "0.6845",
+      "expected": "1.1  标题",
+      "actual": "0.6845"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 480,
+      "text": "0.3655",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 480,
+      "text": "0.3655",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 480,
+      "text": "0.3655",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 480,
+      "text": "0.3655",
+      "expected": "1.1  标题",
+      "actual": "0.3655"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 481,
+      "text": "0.4158",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 481,
+      "text": "0.4158",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 481,
+      "text": "0.4158",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 481,
+      "text": "0.4158",
+      "expected": "1.1  标题",
+      "actual": "0.4158"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.style",
+      "message": "二级标题应使用模板二级标题样式。",
+      "paragraph_index": 482,
+      "text": "0.5726",
+      "expected": "38",
+      "actual": "Compact"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.align",
+      "message": "二级标题应顶格左对齐。",
+      "paragraph_index": 482,
+      "text": "0.5726",
+      "expected": "left",
+      "actual": "center"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.line",
+      "message": "二级标题应为单倍行距。",
+      "paragraph_index": 482,
+      "text": "0.5726",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "heading.section.number_space",
+      "message": "二级标题编号和标题文字之间应空两格。",
+      "paragraph_index": 482,
+      "text": "0.5726",
+      "expected": "1.1  标题",
+      "actual": "0.5726"
+    },
+    {
+      "severity": "error",
+      "rule_id": "abstract.cn.title.text",
+      "message": "中文摘要标题两字之间应空一格。",
+      "paragraph_index": 39,
+      "text": "摘要",
+      "expected": "摘  要",
+      "actual": "摘要"
+    },
+    {
+      "severity": "error",
+      "rule_id": "abstract.cn.title.style",
+      "message": "中文摘要标题应使用不编号章标题样式。",
+      "paragraph_index": 39,
+      "text": "摘要",
+      "expected": "36",
+      "actual": "2"
+    },
+    {
+      "severity": "error",
+      "rule_id": "abstract.cn.title.align",
+      "message": "中文摘要标题应居中。",
+      "paragraph_index": 39,
+      "text": "摘要",
+      "expected": "center",
+      "actual": null
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.cn.title.font",
+      "message": "中文摘要标题应使用宋体。",
+      "paragraph_index": 39,
+      "text": "摘要",
+      "expected": "宋体",
+      "actual": null
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.cn.title.size",
+      "message": "中文摘要标题应为二号字。",
+      "paragraph_index": 39,
+      "text": "摘要",
+      "expected": "44",
+      "actual": null
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.cn.title.bold",
+      "message": "中文摘要标题应加粗。",
+      "paragraph_index": 39,
+      "text": "摘要",
+      "expected": "bold=true",
+      "actual": null
+    },
+    {
+      "severity": "error",
+      "rule_id": "abstract.cn.page_break",
+      "message": "中文摘要标题前应分页。",
+      "paragraph_index": 39,
+      "text": "摘要",
+      "expected": "pageBreakBefore",
+      "actual": "missing"
+    },
+    {
+      "severity": "error",
+      "rule_id": "abstract.en.title.style",
+      "message": "英文摘要标题应使用不编号章标题样式。",
+      "paragraph_index": 45,
+      "text": "ABSTRACT",
+      "expected": "36",
+      "actual": "2"
+    },
+    {
+      "severity": "error",
+      "rule_id": "abstract.en.title.align",
+      "message": "英文摘要标题应居中。",
+      "paragraph_index": 45,
+      "text": "ABSTRACT",
+      "expected": "center",
+      "actual": null
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.en.title.font",
+      "message": "英文摘要标题应使用 Times New Roman。",
+      "paragraph_index": 45,
+      "text": "ABSTRACT",
+      "expected": "Times New Roman",
+      "actual": null
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.en.title.size",
+      "message": "英文摘要标题应为二号字。",
+      "paragraph_index": 45,
+      "text": "ABSTRACT",
+      "expected": "44",
+      "actual": null
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.en.title.bold",
+      "message": "英文摘要标题应加粗。",
+      "paragraph_index": 45,
+      "text": "ABSTRACT",
+      "expected": "bold=true",
+      "actual": null
+    },
+    {
+      "severity": "error",
+      "rule_id": "abstract.en.page_break",
+      "message": "英文摘要标题前应分页。",
+      "paragraph_index": 45,
+      "text": "ABSTRACT",
+      "expected": "pageBreakBefore",
+      "actual": "missing"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.cn.keywords.before",
+      "message": "中文关键词段前应为 0.2 行。",
+      "paragraph_index": 44,
+      "text": "关键词： 工程图纸检索，CLIP，参数高效微调，无清洗注意力路线，结构重排序，OCR，多模态检索",
+      "expected": "beforeLines=20",
+      "actual": "beforeLines=None"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "abstract.en.keywords.before",
+      "message": "英文关键词段前应为 0.2 行。",
+      "paragraph_index": 50,
+      "text": "KEY WORDS: Engineering Drawing Retrieval; CLIP; Parameter-Efficient Fine-Tuning; No-Cleaning Attention Route; Structure-Aware Re-Ranking; OCR; Multimodal Retrieval",
+      "expected": "beforeLines=20",
+      "actual": "beforeLines=None"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "backmatter.style36.based_on",
+      "message": "不编号章标题样式仍继承其他样式，可能导致段前段后显示异常。",
+      "paragraph_index": null,
+      "text": null,
+      "expected": "basedOn 为空",
+      "actual": "1"
+    },
+    {
+      "severity": "error",
+      "rule_id": "backmatter.style",
+      "message": "参考文献 应使用不编号章标题样式。",
+      "paragraph_index": 608,
+      "text": "参考文献",
+      "expected": "36",
+      "actual": "2"
+    },
+    {
+      "severity": "error",
+      "rule_id": "backmatter.align",
+      "message": "参考文献 应居中。",
+      "paragraph_index": 608,
+      "text": "参考文献",
+      "expected": "center",
+      "actual": null
+    },
+    {
+      "severity": "error",
+      "rule_id": "backmatter.page_break",
+      "message": "参考文献 前应分页。",
+      "paragraph_index": 608,
+      "text": "参考文献",
+      "expected": "pageBreakBefore",
+      "actual": "missing"
+    },
+    {
+      "severity": "error",
+      "rule_id": "backmatter.before",
+      "message": "参考文献 段前应为 30 磅。",
+      "paragraph_index": 608,
+      "text": "参考文献",
+      "expected": "before=600",
+      "actual": "before=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "backmatter.after",
+      "message": "参考文献 段后应为 30 磅。",
+      "paragraph_index": 608,
+      "text": "参考文献",
+      "expected": "after=600",
+      "actual": "after=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "backmatter.line",
+      "message": "参考文献 应为单倍行距。",
+      "paragraph_index": 608,
+      "text": "参考文献",
+      "expected": "line=240",
+      "actual": "line=None"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 609,
+      "text": "[1] \tRadford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 609,
+      "text": "[1] \tRadford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "bibliography.english.et_al",
+      "message": "英文参考文献多人作者应使用 et al.。",
+      "paragraph_index": 609,
+      "text": "[1] \tRadford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763.",
+      "expected": "et al.",
+      "actual": "[1] Radford A, Kim J W, Hallacy C, 等. Learning Transferable Visual Models From Natural Language Supervision[C]//Proceedings of the 38th International Conference on Machine Learning. 2021: 8748-8763."
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 610,
+      "text": "[2] \tZhang C, Liu J. Content Based Deep Learning Image Retrieval: A Survey[J]. Proceedings of the 2023 9th International Conference on Communication and Information Processing, 2023: 158-163.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 610,
+      "text": "[2] \tZhang C, Liu J. Content Based Deep Learning Image Retrieval: A Survey[J]. Proceedings of the 2023 9th International Conference on Communication and Information Processing, 2023: 158-163.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 611,
+      "text": "[3] \t刘海桥, 刘萌, 龚子超, 等. 基于深度学习的图像匹配方法综述[J]. 航空学报, 2024, 45(3).",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 611,
+      "text": "[3] \t刘海桥, 刘萌, 龚子超, 等. 基于深度学习的图像匹配方法综述[J]. 航空学报, 2024, 45(3).",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 612,
+      "text": "[4] \tHan Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 612,
+      "text": "[4] \tHan Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "bibliography.english.et_al",
+      "message": "英文参考文献多人作者应使用 et al.。",
+      "paragraph_index": 612,
+      "text": "[4] \tHan Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741.",
+      "expected": "et al.",
+      "actual": "[4] Han Z, Azman A B, Mustaffa M R B, 等. Cross-Modal Retrieval: A Review of Methodologies, Datasets, and Future Perspectives[J]. IEEE Access, 2024, 12: 115716-115741."
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 613,
+      "text": "[5] \tSain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 613,
+      "text": "[5] \tSain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "bibliography.english.et_al",
+      "message": "英文参考文献多人作者应使用 et al.。",
+      "paragraph_index": 613,
+      "text": "[5] \tSain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775.",
+      "expected": "et al.",
+      "actual": "[5] Sain A, Bhunia A K, Chowdhury P N, 等. CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023: 2765-2775."
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 614,
+      "text": "[6] \tGao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 614,
+      "text": "[6] \tGao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "bibliography.english.et_al",
+      "message": "英文参考文献多人作者应使用 et al.。",
+      "paragraph_index": 614,
+      "text": "[6] \tGao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595.",
+      "expected": "et al.",
+      "actual": "[6] Gao P, Geng S, Zhang R, 等. CLIP-Adapter: Better Vision-Language Models With Feature Adapters[J]. International Journal of Computer Vision, 2024, 132(2): 581-595."
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 615,
+      "text": "[7] \tZhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 615,
+      "text": "[7] \tZhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "bibliography.english.et_al",
+      "message": "英文参考文献多人作者应使用 et al.。",
+      "paragraph_index": 615,
+      "text": "[7] \tZhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348.",
+      "expected": "et al.",
+      "actual": "[7] Zhou K, Yang J, Loy C C, 等. Learning to Prompt for Vision-Language Models[J]. International Journal of Computer Vision, 2022, 130(9): 2337-2348."
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 616,
+      "text": "[8] \tMahajan S N, Muthuganapathy R. OrthoCAD-322K: A Cross-Modal Approach for Retrieving 3D CAD Models From Orthographic Views Using a Graph-Based Framework on a Developed Large-Scale Dataset[J]. Computers & Graphics, 2025: 104357.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 616,
+      "text": "[8] \tMahajan S N, Muthuganapathy R. OrthoCAD-322K: A Cross-Modal Approach for Retrieving 3D CAD Models From Orthographic Views Using a Graph-Based Framework on a Developed Large-Scale Dataset[J]. Computers & Graphics, 2025: 104357.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 617,
+      "text": "[9] \tHeidari N, Iosifidis A. Geometric Deep Learning for Computer-Aided Design: A Survey[J]. IEEE Access, 2025.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 617,
+      "text": "[9] \tHeidari N, Iosifidis A. Geometric Deep Learning for Computer-Aided Design: A Survey[J]. IEEE Access, 2025.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 618,
+      "text": "[10] \tMalkov Y A, Yashunin D A. Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020, 42(4): 824-836.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 618,
+      "text": "[10] \tMalkov Y A, Yashunin D A. Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020, 42(4): 824-836.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 619,
+      "text": "[11] \tPan J, Wang J, Li G. Survey of Vector Database Management Systems[J]. The VLDB Journal, 2024, 33(5): 1591-1615.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 619,
+      "text": "[11] \tPan J, Wang J, Li G. Survey of Vector Database Management Systems[J]. The VLDB Journal, 2024, 33(5): 1591-1615.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 620,
+      "text": "[12] \tQdrant Team. Qdrant: Vector Similarity Search Engine[Z]. 2024.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 620,
+      "text": "[12] \tQdrant Team. Qdrant: Vector Similarity Search Engine[Z]. 2024.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 621,
+      "text": "[13] \tJohnson J, Douze M, Jégou H. Billion-Scale Similarity Search With GPUs[J]. IEEE Transactions on Big Data, 2019, 7(3): 535-547.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 621,
+      "text": "[13] \tJohnson J, Douze M, Jégou H. Billion-Scale Similarity Search With GPUs[J]. IEEE Transactions on Big Data, 2019, 7(3): 535-547.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 622,
+      "text": "[14] \tVaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 622,
+      "text": "[14] \tVaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "bibliography.english.et_al",
+      "message": "英文参考文献多人作者应使用 et al.。",
+      "paragraph_index": 622,
+      "text": "[14] \tVaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008.",
+      "expected": "et al.",
+      "actual": "[14] Vaswani A, Shazeer N, Parmar N, 等. Attention Is All You Need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008."
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.style",
+      "message": "参考文献条目应使用参考文献段落样式。",
+      "paragraph_index": 623,
+      "text": "[15] \tSelvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359.",
+      "expected": "44",
+      "actual": "Bibliography"
+    },
+    {
+      "severity": "error",
+      "rule_id": "bibliography.indent",
+      "message": "参考文献条目应使用悬挂缩进，避免编号后大空白。",
+      "paragraph_index": 623,
+      "text": "[15] \tSelvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359.",
+      "expected": "left=420 hanging=420",
+      "actual": "{}"
+    },
+    {
+      "severity": "warning",
+      "rule_id": "bibliography.english.et_al",
+      "message": "英文参考文献多人作者应使用 et al.。",
+      "paragraph_index": 623,
+      "text": "[15] \tSelvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359.",
+      "expected": "et al.",
+      "actual": "[15] Selvaraju R R, Cogswell M, Das A, 等. Grad-CAM: Visual Explanations From Deep Networks via Gradient-Based Localization[J]. International Journal of Computer Vision, 2020, 128(2): 336-359."
+    }
+  ]
+}

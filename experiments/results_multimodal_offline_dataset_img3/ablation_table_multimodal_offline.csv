@@ -1,0 +1,4 @@
+﻿mode,label,query_count,recall_at_1,recall_at_5,recall_at_10,map_at_k,ndcg_at_k,first_tier,second_tier,anmrr,elapsed_seconds
+multimodal_text,YOLO Cleaning + Structure + OCR,440,0.8773,0.9114,0.9205,0.5657,0.6421,0.3026,0.3458,0.6409,7118.62
+attention_multimodal,Attention + Structure + OCR (No Cleaning),440,0.8705,0.9273,0.9477,0.6116,0.6845,0.3655,0.4158,0.5726,6379.29
+

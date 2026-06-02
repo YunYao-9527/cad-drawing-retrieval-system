@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+The style file: gbt7714-numerical.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 150 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+You've used 15 entries,
+            6859 wiz_defined-function locations,
+            1308 strings with 12564 characters,
+and the built_in function-call counts, 1633876 in all, are:
+= -- 170560
+> -- 16776
+< -- 130000
++ -- 6509
+- -- 3051
+* -- 6275
+:= -- 26083
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 26
+chr.to.int$ -- 116646
+cite$ -- 15
+duplicate$ -- 299936
+empty$ -- 1137
+format.name$ -- 469
+if$ -- 317695
+int.to.chr$ -- 2242
+int.to.str$ -- 16
+missing$ -- 0
+newline$ -- 93
+num.names$ -- 45
+pop$ -- 31139
+preamble$ -- 1
+purify$ -- 163
+quote$ -- 0
+skip$ -- 38401
+stack$ -- 0
+substring$ -- 250876
+swap$ -- 211248
+text.length$ -- 320
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 165
+warning$ -- 0
+while$ -- 3707
+width$ -- 0
+write$ -- 221

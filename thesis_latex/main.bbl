@@ -1,0 +1,114 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, et~al.]{radford2021clip}
+RADFORD A, KIM J~W, HALLACY C, et~al.
+\newblock Learning transferable visual models from natural language
+  supervision\allowbreak[C]//\allowbreak
+Proceedings of the 38th International Conference on Machine Learning.
+\newblock 2021: 8748-8763.
+
+\bibitem[Zhang et~al.(2023)Zhang and Liu]{zhang2023cbirsurvey}
+ZHANG C, LIU J.
+\newblock Content based deep learning image retrieval: a survey\allowbreak[J].
+\newblock Proceedings of the 2023 9th International Conference on Communication
+  and Information Processing, 2023: 158-163.
+
+\bibitem[刘海桥\ 等(2024)刘海桥, 刘萌, 龚子超, and
+  等]{liu2024matchingreview}
+刘海桥, 刘萌, 龚子超, 等.
+\newblock 基于深度学习的图像匹配方法综述\allowbreak[J].
+\newblock 航空学报, 2024, 45\allowbreak (3).
+
+\bibitem[Han et~al.(2024)Han, Azman, Mustaffa, et~al.]{han2024crossmodalreview}
+HAN Z, AZMAN A~B, MUSTAFFA M~R~B, et~al.
+\newblock Cross-modal retrieval: a review of methodologies, datasets, and
+  future perspectives\allowbreak[J].
+\newblock IEEE Access, 2024, 12: 115716-115741.
+
+\bibitem[Sain et~al.(2023)Sain, Bhunia, Chowdhury, Koley, Song, and
+  Xiang]{sain2023clipforallthings}
+SAIN A, BHUNIA A~K, CHOWDHURY P~N, et~al.
+\newblock CLIP for all things zero-shot sketch-based image retrieval,
+  fine-grained or not\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition.
+\newblock 2023: 2765-2775.
+
+\bibitem[Gao et~al.(2024)Gao, Geng, Zhang, Ma, Fang, Zhang, Li, and
+  Qiao]{gao2024clipadapter}
+GAO P, GENG S, ZHANG R, et~al.
+\newblock CLIP-adapter: better vision-language models with feature
+  adapters\allowbreak[J].
+\newblock International Journal of Computer Vision, 2024, 132\allowbreak (2):
+  581-595.
+
+\bibitem[Zhou et~al.(2022)Zhou, Yang, Loy, and Liu]{zhou2022coop}
+ZHOU K, YANG J, LOY C~C, et~al.
+\newblock Learning to prompt for vision-language models\allowbreak[J].
+\newblock International Journal of Computer Vision, 2022, 130\allowbreak (9):
+  2337-2348.
+
+\bibitem[Mahajan et~al.(2025)Mahajan and Muthuganapathy]{mahajan2025orthocad}
+MAHAJAN S~N, MUTHUGANAPATHY R.
+\newblock OrthoCAD-322K: a cross-modal approach for retrieving 3D CAD models
+  from orthographic views using a graph-based framework on a developed
+  large-scale dataset\allowbreak[J].
+\newblock Computers \& Graphics, 2025: 104357.
+
+\bibitem[Heidari et~al.(2025)Heidari and Iosifidis]{heidari2025geometriccad}
+HEIDARI N, IOSIFIDIS A.
+\newblock Geometric deep learning for computer-aided design: a
+  survey\allowbreak[J].
+\newblock IEEE Access, 2025.
+
+\bibitem[Malkov et~al.(2020)Malkov and Yashunin]{malkov2018hnsw}
+MALKOV Y~A, YASHUNIN D~A.
+\newblock Efficient and robust approximate nearest neighbor search using
+  hierarchical navigable small world graphs\allowbreak[J].
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020,
+  42\allowbreak (4): 824-836.
+
+\bibitem[Pan et~al.(2024)Pan, Wang, and Li]{pan2024vectordbsurvey}
+PAN J, WANG J, LI G.
+\newblock Survey of vector database management systems\allowbreak[J].
+\newblock The VLDB Journal, 2024, 33\allowbreak (5): 1591-1615.
+
+\bibitem[{Qdrant Team}(2024)]{qdrant2024site}
+{Qdrant Team}.
+\newblock Qdrant: vector similarity search engine\allowbreak[EB/OL].
+\newblock 2024.
+\newblock \url{https://qdrant.tech/}.
+
+\bibitem[Johnson et~al.(2019)Johnson, Douze, and J{\'e}gou]{johnson2019faiss}
+JOHNSON J, DOUZE M, J{\'E}GOU H.
+\newblock Billion-scale similarity search with GPUs\allowbreak[J].
+\newblock IEEE Transactions on Big Data, 2019, 7\allowbreak (3): 535-547.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+VASWANI A, SHAZEER N, PARMAR N, et~al.
+\newblock Attention is all you need\allowbreak[C]//\allowbreak
+Advances in Neural Information Processing Systems.
+\newblock 2017: 5998-6008.
+
+\bibitem[Selvaraju et~al.(2020)Selvaraju, Cogswell, Das, Vedantam, Parikh, and
+  Batra]{selvaraju2017gradcam}
+SELVARAJU R~R, COGSWELL M, DAS A, et~al.
+\newblock Grad-CAM: visual explanations from deep networks via gradient-based
+  localization\allowbreak[J].
+\newblock International Journal of Computer Vision, 2020, 128\allowbreak (2):
+  336-359.
+
+\end{thebibliography}

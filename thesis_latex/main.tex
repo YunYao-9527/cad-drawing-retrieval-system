@@ -1,0 +1,117 @@
+\documentclass[UTF8,openany]{ctexbook}
+
+\usepackage[a4paper,top=27.5mm,bottom=25.4mm,left=35.7mm,right=27.7mm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{threeparttable}
+\usepackage{xcolor}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=blue!50!black,
+  urlcolor=blue!60!black,
+  pdftitle={基于预训练模型微调的工程图纸检索系统设计},
+  pdfauthor={王登政}
+}
+
+\captionsetup{font=small,labelfont=bf}
+\setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=2.4em}
+\renewcommand{\arraystretch}{1.25}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+\crefname{table}{表}{表}
+\Crefname{table}{表}{表}
+\crefname{figure}{图}{图}
+\Crefname{figure}{图}{图}
+\crefname{equation}{公式}{公式}
+\Crefname{equation}{公式}{公式}
+
+\newcommand{\thesistitle}{基于预训练模型微调的工程图纸检索系统设计}
+\newcommand{\englishtitle}{Design of an Engineering Drawing Retrieval System Based on Pretrained Model Fine-Tuning}
+\newcommand{\universityname}{天津大学}
+\newcommand{\schoolname}{自动化学院}
+\newcommand{\majorname}{电子信息工程}
+\newcommand{\studentname}{王登政}
+\newcommand{\studentid}{3022234549}
+\newcommand{\advisorname}{宋丹}
+\newcommand{\gradeinfo}{2022级}
+\newcommand{\finishdate}{2026年6月}
+
+\fancypagestyle{thesisfancy}{
+  \fancyhf{}
+  \fancyhead[C]{\small 天津大学2026届本科生毕业设计（论文）}
+  \fancyfoot[C]{\small \thepage}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\let\cleardoublepage\clearpage
+
+\begin{document}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \vspace*{2.5cm}
+  {\zihao{2}\bfseries \universityname \par}
+  \vspace{1.2cm}
+  {\zihao{-0}\bfseries 本科毕业设计（论文）\par}
+  \vspace{2cm}
+  {\zihao{2}\bfseries \thesistitle \par}
+  \vspace{2.2cm}
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{p{3.5cm}p{8.5cm}}
+    学\qquad 院： & \schoolname \\
+    专\qquad 业： & \majorname \\
+    年\qquad 级： & \gradeinfo \\
+    姓\qquad 名： & \studentname \\
+    学\qquad 号： & \studentid \\
+    指导教师： & \advisorname \\
+  \end{tabular}
+  \vfill
+  {\zihao{-3}\finishdate\par}
+\end{titlepage}
+
+\input{chapters/inner_cover}
+\input{chapters/declaration}
+
+\frontmatter
+\pagestyle{plain}
+\pagenumbering{Roman}
+\input{chapters/abstract}
+\tableofcontents
+
+\mainmatter
+\pagestyle{thesisfancy}
+\input{chapters/01_introduction}
+\input{chapters/02_related_work}
+\input{chapters/03_system_design}
+\input{chapters/04_method}
+\input{chapters/05_experiments}
+\input{chapters/06_implementation}
+\input{chapters/07_conclusion}
+
+\backmatter
+\bibliographystyle{gbt7714-numerical}
+\bibliography{references}
+\input{chapters/appendix}
+\input{chapters/acknowledgements}
+
+\end{document}

@@ -1,0 +1,92 @@
+version: '3.8'
+
+services:
+  cad-retrieval:
+    image: cad-retrieval-system:latest
+    container_name: cad-retrieval-system
+    ports:
+      - "5000:5000"
+      - "9090:9090"  # Prometheus metrics port
+    volumes:
+      # 默认挂载路径（符合交付要求）
+      - ./data:/app/data:ro              # 图库目录
+      - ./models:/app/models:ro          # 模型文件目录
+      - ./qdrant_db:/app/qdrant_db       # 向量数据库目录
+      - ./logs:/app/logs                 # 日志目录
+      - ./config:/app/config:ro          # 配置文件目录（可选）
+    environment:
+      # 应用配置
+      - APP_HOST=0.0.0.0
+      - APP_PORT=5000
+      - APP_DEBUG=false
+      # 模型配置
+      - MODEL_FINETUNED_MODEL_PATH=/app/models/best_retrieval_clip.pth
+      - MODEL_DEVICE=auto
+      # 图库配置
+      - GALLERY_CAD_DRAWING_DIR=/app/data/gallery
+      # 向量数据库配置（使用Qdrant）
+      - VECTOR_DB_TYPE=qdrant
+      # 日志配置
+      - LOGGING_LEVEL=INFO
+    # GPU支持（可选，如果系统有GPU）
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health').read()"]
+      interval: 10s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    networks:
+      - cad-retrieval-network
+
+  # 可选：Prometheus监控服务
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: cad-retrieval-prometheus
+    ports:
+      - "9091:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    restart: unless-stopped
+    networks:
+      - cad-retrieval-network
+    profiles:
+      - monitoring
+
+  # 可选：Grafana可视化服务
+  grafana:
+    image: grafana/grafana:latest
+    container_name: cad-retrieval-grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    restart: unless-stopped
+    networks:
+      - cad-retrieval-network
+    profiles:
+      - monitoring
+
+networks:
+  cad-retrieval-network:
+    driver: bridge
+
+volumes:
+  prometheus-data:
+  grafana-data:
+

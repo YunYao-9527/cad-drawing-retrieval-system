@@ -1,0 +1,25 @@
+\chapter*{摘要}
+\addcontentsline{toc}{chapter}{摘要}
+
+工程图纸检索是制造业设计复用、工艺继承和知识管理中的关键问题。传统基于人工分类、图号索引或关键词匹配的检索方式，难以满足大规模工程图纸库中按结构相似性和语义相关性快速检索历史图纸的需求。针对工程图纸线条密集、结构主导、文本信息与图形信息紧密耦合的特点，本文以 CLIP 检索模型为基础，研究并实现了一套面向工程图纸的相似检索方法与系统。
+
+在方法设计上，本文不再沿用单链条模块堆叠的方式，而是将整体方案重构为两条主线：一条是 YOLO 清洗路线，另一条是无清洗注意力式视觉增强路线。在此基础上，本文进一步分别考察结构相似性增强和 OCR 文字辅助检索对两条主线的影响。针对视觉表征部分，本文构建了基于 CLIP 的基础视觉检索框架，并设计掩码引导的局部主体增强机制，以提升模型对工程图纸主体结构区域的关注能力。针对候选精排阶段，本文设计了轻量级结构描述符和结构重排序策略，用于增强对轮廓布局和投影分布的区分能力。针对标题栏信息，本文实现了字段级 OCR 文本抽取与辅助检索机制，用于提取图号、零件名称、材料和比例等强语义字段，并将其用于候选排序修正。为了提高方法的可解释性，本文还实现了基于 Grad-CAM 的可视化分析工具，用于展示模型在检索判定中所关注的局部区域。
+
+在实验设计上，本文使用清理后的 \texttt{Dataset\_img3} 数据集进行正式评测。该数据集包含 13880 张 PNG 工程图纸，覆盖 22 个类别。正式实验采用按类别均衡抽样方式，共选取 440 个查询样本，并以 Recall@K、mAP@10、nDCG@10、FT、ST 和 ANMRR 作为评价指标。实验结果表明，在当前数据条件下，单独引入 YOLO 清洗并未带来稳定收益；无清洗注意力路线整体优于 YOLO 清洗路线；结构重排序仍然是最稳定有效的增强模块；当前最佳模式为 \texttt{Attention + Structure (No Cleaning)}，其 Recall@1 达到 0.8977，Recall@5 达到 0.9318，Recall@10 达到 0.9500，nDCG@10 达到 0.6882。相比之下，OCR 文字辅助检索在两条主线中的增益均不稳定，说明其仍然更适合作为可扩展增强模块而非当前阶段的主要性能来源。
+
+本文完成了从数据清理、GPU 化建库、离线对齐评测到前后端检索服务的完整工程实现，为后续工程图纸检索研究与系统部署提供了较为完整的实验基础与实现方案。
+
+\noindent\textbf{关键词：} 工程图纸检索，CLIP，参数高效微调，无清洗注意力路线，结构重排序，OCR，多模态检索
+
+\chapter*{ABSTRACT}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+Engineering drawing retrieval is an important problem in design reuse, process inheritance, and knowledge management in manufacturing. Traditional retrieval methods based on manual categorization, drawing numbers, or keyword matching are insufficient for large-scale engineering drawing repositories, where users need to retrieve historically relevant drawings according to structural similarity and semantic relevance. To address this problem, this thesis develops and implements a CLIP-based retrieval framework for engineering drawings.
+
+Instead of describing the method as a single serial pipeline, this thesis reorganizes the overall solution into two main routes: a YOLO-cleaning route and a no-cleaning attention-style visual enhancement route. On top of these two routes, structure-aware enhancement and OCR-assisted multimodal retrieval are further studied. For visual representation, a CLIP-based baseline retrieval framework is built, and a mask-guided local enhancement strategy is introduced to focus more on the main structural regions of engineering drawings. For candidate refinement, a lightweight structural descriptor and a structure-aware re-ranking strategy are designed to better distinguish layout and projection patterns. For title-block semantics, a field-aware OCR-assisted retrieval mechanism is implemented to extract strong semantic cues such as drawing number, part name, material, and scale. In addition, a Grad-CAM-based visualization tool is implemented to improve interpretability and support failure-case analysis.
+
+Formal experiments are conducted on the cleaned \texttt{Dataset\_img3}, which contains 13,880 PNG engineering drawings from 22 categories. A total of 440 balanced query samples are used for evaluation, and Recall@K, mAP@10, nDCG@10, FT, ST, and ANMRR are adopted as the evaluation metrics. The results show that, under the cleaned large-scale dataset setting, YOLO cleaning alone does not bring stable gains. The no-cleaning attention-style route consistently outperforms the YOLO-cleaning route, while structure-aware re-ranking remains the most effective enhancement module. The best-performing setting is \texttt{Attention + Structure (No Cleaning)}, which achieves Recall@1 of 0.8977, Recall@5 of 0.9318, Recall@10 of 0.9500, and nDCG@10 of 0.6882. In contrast, OCR-assisted multimodal retrieval does not produce stable gains on either route, indicating that OCR should currently be viewed as an auxiliary enhancement rather than the main source of performance improvement.
+
+Finally, this thesis completes a full engineering workflow including dataset cleaning, GPU-based indexing, offline aligned evaluation, and an end-to-end retrieval service, which provides a practical basis for follow-up research and deployment of engineering drawing retrieval systems.
+
+\noindent\textbf{KEY WORDS:} Engineering Drawing Retrieval; CLIP; Parameter-Efficient Fine-Tuning; No-Cleaning Attention Route; Structure-Aware Re-Ranking; OCR; Multimodal Retrieval
