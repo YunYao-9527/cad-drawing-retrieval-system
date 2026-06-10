@@ -2,50 +2,13 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>工程图纸多模态检索系统 Demo</title>
-  <link rel="stylesheet" href="demo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=https://introduction-gulf-fires-retailer.trycloudflare.com/">
+  <title>进入真实工程图纸检索系统</title>
 </head>
 <body>
-  <main class="app">
-    <header>
-      <div><span class="kicker">MULTIMODAL CAD RETRIEVAL</span><h1>工程图纸智能检索系统</h1><p>CLIP 语义召回 · 结构描述子重排 · 标题栏字段级 OCR 增强</p></div>
-      <div class="head-links"><span>在线交互 Demo</span><a href="https://github.com/YunYao-9527/cad-drawing-retrieval-system">GitHub</a></div>
-    </header>
-
-    <section class="search-panel">
-      <div class="tabs"><button class="tab active" data-mode="text">文本检索</button><button class="tab" data-mode="image">以图搜图</button></div>
-      <div class="search-row" id="textMode">
-        <input id="query" value="带法兰的泵体装配图" placeholder="输入结构、零件或标题栏关键词">
-        <button id="search">检索图纸</button>
-      </div>
-      <div class="upload-row hidden" id="imageMode">
-        <label class="upload"><input id="imageInput" type="file" accept="image/*"><span>选择本地图纸作为查询</span><small>文件仅在浏览器本地预览，不会上传</small></label>
-        <div id="preview" class="preview">暂无查询图</div>
-        <button id="imageSearch">执行以图搜图</button>
-      </div>
-      <div class="pipeline"><span>查询编码</span><i></i><span>CLIP Top-K 召回</span><i></i><span>掩码感知池化</span><i></i><span>结构 + OCR 重排</span></div>
-    </section>
-
-    <section class="stats">
-      <article><b>2,454</b><span>公开 Demo 索引规模</span></article><article><b>0.7464</b><span>Recall@1</span></article><article><b>0.8357</b><span>Recall@10</span></article><article><b id="latency">-</b><span>检索耗时</span></article>
-    </section>
-
-    <section class="workspace">
-      <aside>
-        <h2>检索配置</h2>
-        <label>候选数量 <strong id="topkText">6</strong><input id="topk" type="range" min="3" max="8" value="6"></label>
-        <label>OCR 增强权重 <strong id="ocrText">35%</strong><input id="ocrWeight" type="range" min="0" max="60" value="35"></label>
-        <label>结构重排权重 <strong id="structureText">45%</strong><input id="structureWeight" type="range" min="0" max="70" value="45"></label>
-        <div class="explain"><b>可解释性开关已开启</b><p>结果卡展示 CLIP、结构与 OCR 三部分得分。</p></div>
-      </aside>
-      <section class="results-wrap">
-        <div class="result-head"><div><h2>检索结果</h2><p id="summary">点击检索，查看两阶段排序结果</p></div><button id="rerank">仅执行重排</button></div>
-        <div id="results" class="results"><div class="empty">等待查询输入</div></div>
-      </section>
-    </section>
-    <footer>在线页面展示系统交互与排序逻辑；完整模型推理、Qdrant 索引和数据集在本地/服务端运行。</footer>
-  </main>
-  <script src="demo.js"></script>
+  <p>正在进入真实运行的工程图纸检索系统……</p>
+  <p><a href="https://introduction-gulf-fires-retailer.trycloudflare.com/">若未自动跳转，请点击进入系统</a></p>
+  <script>location.replace("https://introduction-gulf-fires-retailer.trycloudflare.com/");</script>
 </body>
 </html>
