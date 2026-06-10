@@ -1,335 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>工程图纸检索系统</title>
-  <style>
-    :root {
-      --ink: #172033;
-      --muted: #657085;
-      --paper: #f6f1e8;
-      --card: rgba(255, 255, 255, 0.82);
-      --line: #d9cdb8;
-      --accent: #0c756f;
-      --accent-dark: #0a4c49;
-      --warm: #d9822b;
-      --blueprint: #153e63;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      color: var(--ink);
-      font-family: "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei", serif;
-      background:
-        radial-gradient(circle at top left, rgba(12, 117, 111, 0.18), transparent 32rem),
-        linear-gradient(135deg, rgba(21, 62, 99, 0.08) 25%, transparent 25%) 0 0 / 38px 38px,
-        var(--paper);
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .shell {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 48px 0 60px;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 48px;
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      background: linear-gradient(130deg, rgba(255,255,255,0.92), rgba(255,255,255,0.68));
-      box-shadow: 0 24px 70px rgba(38, 31, 20, 0.14);
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      right: -80px;
-      top: -120px;
-      width: 360px;
-      height: 360px;
-      border: 1px solid rgba(12, 117, 111, 0.26);
-      border-radius: 50%;
-      background:
-        linear-gradient(90deg, transparent 49%, rgba(12, 117, 111, 0.25) 50%, transparent 51%),
-        linear-gradient(0deg, transparent 49%, rgba(12, 117, 111, 0.25) 50%, transparent 51%);
-      opacity: 0.85;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border: 1px solid rgba(12, 117, 111, 0.24);
-      border-radius: 999px;
-      color: var(--accent-dark);
-      background: rgba(12, 117, 111, 0.08);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-    }
-
-    h1 {
-      max-width: 780px;
-      margin: 22px 0 18px;
-      font-size: clamp(34px, 5vw, 62px);
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-    }
-
-    .lead {
-      max-width: 820px;
-      margin: 0;
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.9;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 30px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 46px;
-      padding: 0 20px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 800;
-      transition: transform 160ms ease, box-shadow 160ms ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .button.primary {
-      color: white;
-      background: var(--accent);
-      box-shadow: 0 12px 30px rgba(12, 117, 111, 0.28);
-    }
-
-    .button.secondary {
-      color: var(--blueprint);
-      border: 1px solid rgba(21, 62, 99, 0.22);
-      background: rgba(255, 255, 255, 0.72);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .metric,
-    .card {
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      background: var(--card);
-      box-shadow: 0 14px 40px rgba(38, 31, 20, 0.08);
-    }
-
-    .metric {
-      padding: 22px;
-    }
-
-    .metric strong {
-      display: block;
-      color: var(--accent-dark);
-      font-size: 30px;
-      line-height: 1;
-    }
-
-    .metric span {
-      display: block;
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .section {
-      margin-top: 26px;
-      padding: 30px;
-    }
-
-    h2 {
-      margin: 0 0 14px;
-      color: var(--blueprint);
-      font-size: 25px;
-    }
-
-    p {
-      line-height: 1.9;
-    }
-
-    .route {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .route-item {
-      padding: 22px;
-      border: 1px dashed rgba(21, 62, 99, 0.32);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.56);
-    }
-
-    .route-item h3 {
-      margin: 0 0 10px;
-      color: var(--accent-dark);
-      font-size: 18px;
-    }
-
-    .list {
-      display: grid;
-      gap: 10px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .list li {
-      position: relative;
-      padding-left: 20px;
-      color: var(--muted);
-      line-height: 1.75;
-    }
-
-    .list li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.75em;
-      width: 8px;
-      height: 8px;
-      border-radius: 2px;
-      background: var(--warm);
-      transform: rotate(45deg);
-    }
-
-    .notice {
-      border-color: rgba(217, 130, 43, 0.36);
-      background: rgba(255, 246, 232, 0.86);
-    }
-
-    code {
-      padding: 2px 6px;
-      border-radius: 6px;
-      background: rgba(21, 62, 99, 0.08);
-      color: var(--blueprint);
-      font-family: "Cascadia Mono", Consolas, monospace;
-      font-size: 0.92em;
-    }
-
-    footer {
-      margin-top: 26px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 14px;
-    }
-
-    @media (max-width: 860px) {
-      .hero {
-        padding: 30px;
-      }
-
-      .grid,
-      .route {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>工程图纸多模态检索系统 Demo</title>
+  <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-  <main class="shell">
-    <section class="hero">
-      <span class="tag">CAD Drawing Retrieval System</span>
-      <h1>基于预训练模型微调的工程图纸检索系统</h1>
-      <p class="lead">
-        本项目面向工程图纸“结构主导、文本辅助”的检索特点，以 CLIP 视觉表征为基础，对比 YOLO 显式清洗路线与无清洗注意力式增强路线，并在候选精排阶段加入结构相似性增强和标题栏字段级 OCR 辅助，形成可运行的工程图纸检索原型系统。
-      </p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/YunYao-9527/cad-drawing-retrieval-system">查看 GitHub 仓库</a>
-        <a class="button secondary" href="https://professor-dale-laughing-travel.trycloudflare.com">打开当前临时演示</a>
+  <main class="app">
+    <header>
+      <div><span class="kicker">MULTIMODAL CAD RETRIEVAL</span><h1>工程图纸智能检索系统</h1><p>CLIP 语义召回 · 结构描述子重排 · 标题栏字段级 OCR 增强</p></div>
+      <div class="head-links"><span>在线交互 Demo</span><a href="https://github.com/YunYao-9527/cad-drawing-retrieval-system">GitHub</a></div>
+    </header>
+
+    <section class="search-panel">
+      <div class="tabs"><button class="tab active" data-mode="text">文本检索</button><button class="tab" data-mode="image">以图搜图</button></div>
+      <div class="search-row" id="textMode">
+        <input id="query" value="带法兰的泵体装配图" placeholder="输入结构、零件或标题栏关键词">
+        <button id="search">检索图纸</button>
       </div>
+      <div class="upload-row hidden" id="imageMode">
+        <label class="upload"><input id="imageInput" type="file" accept="image/*"><span>选择本地图纸作为查询</span><small>文件仅在浏览器本地预览，不会上传</small></label>
+        <div id="preview" class="preview">暂无查询图</div>
+        <button id="imageSearch">执行以图搜图</button>
+      </div>
+      <div class="pipeline"><span>查询编码</span><i></i><span>CLIP Top-K 召回</span><i></i><span>掩码感知池化</span><i></i><span>结构 + OCR 重排</span></div>
     </section>
 
-    <section class="grid">
-      <div class="metric">
-        <strong>13,880</strong>
-        <span>清理后的 PNG 工程图纸</span>
-      </div>
-      <div class="metric">
-        <strong>22</strong>
-        <span>图纸类别</span>
-      </div>
-      <div class="metric">
-        <strong>440</strong>
-        <span>正式查询样本</span>
-      </div>
-      <div class="metric">
-        <strong>0.8977</strong>
-        <span>最佳 Recall@1</span>
-      </div>
+    <section class="stats">
+      <article><b>2,454</b><span>公开 Demo 索引规模</span></article><article><b>0.7464</b><span>Recall@1</span></article><article><b>0.8357</b><span>Recall@10</span></article><article><b id="latency">-</b><span>检索耗时</span></article>
     </section>
 
-    <section class="card section">
-      <h2>系统主线</h2>
-      <div class="route">
-        <div class="route-item">
-          <h3>YOLO 显式清洗路线</h3>
-          <p>通过检测和掩码方式尝试削弱边框、标题栏或噪声区域对检索的影响，再与结构重排和 OCR 辅助组合，验证显式清洗是否能稳定提升工程图纸检索效果。</p>
-        </div>
-        <div class="route-item">
-          <h3>无清洗注意力式增强路线</h3>
-          <p>不删除图面内容，而是在编码阶段通过 attention-like 主体增强方式突出主体结构，再结合候选精排阶段的结构相似性增强，避免过度清洗导致的细节损失。</p>
-        </div>
-      </div>
+    <section class="workspace">
+      <aside>
+        <h2>检索配置</h2>
+        <label>候选数量 <strong id="topkText">6</strong><input id="topk" type="range" min="3" max="8" value="6"></label>
+        <label>OCR 增强权重 <strong id="ocrText">35%</strong><input id="ocrWeight" type="range" min="0" max="60" value="35"></label>
+        <label>结构重排权重 <strong id="structureText">45%</strong><input id="structureWeight" type="range" min="0" max="70" value="45"></label>
+        <div class="explain"><b>可解释性开关已开启</b><p>结果卡展示 CLIP、结构与 OCR 三部分得分。</p></div>
+      </aside>
+      <section class="results-wrap">
+        <div class="result-head"><div><h2>检索结果</h2><p id="summary">点击检索，查看两阶段排序结果</p></div><button id="rerank">仅执行重排</button></div>
+        <div id="results" class="results"><div class="empty">等待查询输入</div></div>
+      </section>
     </section>
-
-    <section class="card section">
-      <h2>核心功能</h2>
-      <ul class="list">
-        <li>支持工程图纸上传检索，返回 Top-K 相似图纸、类别信息和相似度得分。</li>
-        <li>使用 Qdrant 管理向量索引，支持离线建库、特征缓存和图库统计。</li>
-        <li>支持 baseline、cleaning_only、masked_pooling、full_model、multimodal_text、attention_visual、attention_structure、attention_multimodal 等模式切换。</li>
-        <li>提供离线评测流程，评价指标包括 Recall@K、mAP@10、nDCG@10、FT、ST 和 ANMRR。</li>
-        <li>提供 Grad-CAM 可解释性分析，用于观察检索模型关注的图面区域。</li>
-      </ul>
-    </section>
-
-    <section class="card section notice">
-      <h2>关于 GitHub Pages 的说明</h2>
-      <p>
-        当前这个页面可以长期托管在 GitHub Pages 上，但 GitHub Pages 只能托管静态页面，不能持续运行 Python 后端、CLIP 模型、Qdrant 向量库或 GPU 推理服务。因此，如果需要长期可用的“真实检索系统网址”，推荐采用 <code>GitHub 仓库 + 云服务器后端</code> 的方式：GitHub 负责代码托管和静态入口页，后端部署到云主机、Render、Railway、Fly.io 或学校服务器，前端再访问该后端 API。
-      </p>
-      <p>
-        当前临时演示链接由本地服务通过 Cloudflare Tunnel 暴露，适合答辩预演或短时间展示；如需长期访问，需要把后端迁移到稳定服务器，并将本页面中的演示入口替换为正式后端地址。
-      </p>
-    </section>
-
-    <footer>
-      天津大学本科毕业设计项目 · 工程图纸检索系统 · GitHub Pages 静态入口
-    </footer>
+    <footer>在线页面展示系统交互与排序逻辑；完整模型推理、Qdrant 索引和数据集在本地/服务端运行。</footer>
   </main>
+  <script src="demo.js"></script>
 </body>
 </html>
