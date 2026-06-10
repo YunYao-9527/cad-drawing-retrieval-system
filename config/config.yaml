@@ -9,13 +9,13 @@ app:
   threaded: true
 
 model:
-  finetuned_model_path: "D:\\workspace\\图纸检索项目\\数据集\\clip_model_deployment\\best_retrieval_clip.pth"
+  finetuned_model_path: "${CLIP_MODEL_PATH:-./models/best_retrieval_clip.pth}"
   clip_model_name: "ViT-B/32"
   embedding_dim: 512
   device: "auto"
 
 gallery:
-  cad_drawing_dir: "D:\\workspace\\图纸检索项目\\数据集\\Dataset_img3"
+  cad_drawing_dir: "${GALLERY_DIR:-./data/gallery}"
 
 vector_db:
   type: "qdrant"
@@ -40,7 +40,7 @@ feature:
 
 cleaning:
   enabled: true
-  model_path: "D:\\workspace\\图纸检索项目\\数据集\\111_test\\补丁\\best.pt"
+  model_path: "${YOLO_MODEL_PATH:-./models/best.pt}"
   confidence: 0.25
   iou: 0.45
   padding: 5

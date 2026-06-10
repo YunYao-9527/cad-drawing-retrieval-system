@@ -641,18 +641,14 @@
             loadCategories();
             optimizeImageLoading();
 
-           // === 移除灰色蒙版的简单方案 ===
-
-            // 定期移除Bootstrap的灰色背景
-            setInterval(function() {
+           // === 模态框关闭后清理蒙版 ===
+            document.addEventListener('hidden.bs.modal', function() {
                 const backdrops = document.querySelectorAll('.modal-backdrop');
-                backdrops.forEach(backdrop => {
-                    backdrop.remove();
-                });
+                backdrops.forEach(backdrop => backdrop.remove());
                 document.body.classList.remove('modal-open');
                 document.body.style.overflow = 'auto';
                 document.body.style.paddingRight = '0';
-            }, 100);
+            });
 
             // 为预览模态框图片添加错误处理
             const previewImage = document.getElementById('previewModalImage');
@@ -1204,114 +1200,8 @@
             nextLi.innerHTML = `<a class="page-link" href="javascript:void(0)" onclick="loadCategoryImages('${currentSelectedCategory}', ${data.page + 1})">下一页</a>`;
             pagination.appendChild(nextLi);
         }
-        document.getElementById('findDuplicatesBtn').addEventListener('click', findDuplicates);
-        document.getElementById('cleanupBtn').addEventListener('click', cleanupDuplicates);
-        document.getElementById('confirmRebuild').addEventListener('click', rebuildDatabase);
-
-        function findDuplicates() {
-            const btn = document.getElementById('findDuplicatesBtn');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>查找中...';
-            btn.disabled = true;
-
-            fetch('/api/find_duplicates')
-                .then(response => response.json())
-                .then(data => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-
-                    if (data.status === 'success') {
-                        let message = `找到 ${data.total_duplicate_groups} 个重复文件组\n\n`;
-
-                        Object.entries(data.duplicates).forEach(([key, images]) => {
-                            const [filename, category] = JSON.parse(key);
-                            message += `文件: ${filename} (类别: ${category})\n`;
-                            images.forEach(img => {
-                                message += `  - ID: ${img.id}\n`;
-                            });
-                            message += '\n';
-                        });
-
-                        alert(message);
-                    } else {
-                        alert('查找重复记录失败: ' + data.message);
-                    }
-                })
-                .catch(error => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    console.error('查找重复记录错误:', error);
-                    alert('查找重复记录过程中发生错误: ' + error.message);
-                });
-        }
-
-        function cleanupDuplicates() {
-            if (!confirm('确定要清理重复记录吗？此操作将删除所有重复的图片记录。')) {
-                return;
-            }
-
-            const btn = document.getElementById('cleanupBtn');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>清理中...';
-            btn.disabled = true;
-
-            fetch('/api/cleanup', { method: 'POST' })
-                .then(response => response.json())
-                .then(data => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-
-                    if (data.status === 'success') {
-                        alert(data.message);
-                        // 刷新页面数据
-                        loadCategories(currentCategoryPage);
-                        loadStats();
-                    } else {
-                        alert('清理失败: ' + data.message);
-                    }
-                })
-                .catch(error => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    console.error('清理重复记录错误:', error);
-                    alert('清理重复记录过程中发生错误: ' + error.message);
-                });
-        }
-
-        function rebuildDatabase() {
-            const modal = bootstrap.Modal.getInstance(document.getElementById('rebuildModal'));
-            modal.hide();
-
-            const btn = document.getElementById('rebuildBtn');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>重建中...';
-            btn.disabled = true;
-
-            fetch('/api/rebuild', { method: 'POST' })
-                .then(response => response.json())
-                .then(data => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-
-                    if (data.status === 'success') {
-                        alert(data.message);
-                        // 刷新所有数据
-                        loadCategories(1);
-                        loadStats();
-                        loadClasses();
-                    } else {
-                        alert('重建失败: ' + data.message);
-                    }
-                })
-                .catch(error => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    console.error('重建数据库错误:', error);
-                    alert('重建数据库过程中发生错误: ' + error.message);
-                });
-        }
-        // 修改批量添加函数
-        function addImagesBatch() {
+        // 修改批量添加函数（逐个上传，兼容无 batch 端点）
+        async function addImagesBatch() {
             if (batchFiles.length === 0) {
                 alert('请先选择图片');
                 return;
@@ -1332,53 +1222,47 @@
             } else if (classSelect.value) {
                 imageClass = classSelect.value;
             } else {
-                // 如果没有选择类别，使用第一个文件名作为类别
                 imageClass = batchFiles[0].name.split('.')[0];
             }
 
-            const formData = new FormData();
-            formData.append('class', imageClass);
+            const addBatchBtn = document.getElementById('addBatchBtn');
+            addBatchBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>添加中...';
+            addBatchBtn.disabled = true;
 
-            batchFiles.forEach(file => {
-                formData.append('images', file);
-            });
+            let successCount = 0;
+            let failCount = 0;
 
-            document.getElementById('addBatchBtn').innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>添加中...';
-            document.getElementById('addBatchBtn').disabled = true;
+            for (let i = 0; i < batchFiles.length; i++) {
+                addBatchBtn.innerHTML = `<i class="fas fa-spinner fa-spin me-2"></i>添加中 (${i + 1}/${batchFiles.length})...`;
+                const formData = new FormData();
+                formData.append('image', batchFiles[i]);
+                formData.append('class', imageClass);
 
-            fetch('/api/images/batch', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('addBatchBtn').innerHTML = '<i class="fas fa-layer-group me-2"></i>批量添加';
-                document.getElementById('addBatchBtn').disabled = false;
-
-                if (data.status === 'success') {
-                    alert(`批量添加完成！成功: ${data.results.success}, 失败: ${data.results.failed}`);
-                    resetManageUpload();
-
-                    // 强制刷新分类管理
-                    currentCategoryPage = 1; // 重置到第一页
-                    loadCategories(1); // 重新加载分类列表
-                    loadStats();
-                    loadClasses();
-
-                    // 如果当前在分类视图，也刷新
-                    if (currentSelectedCategory) {
-                        loadCategoryImages(currentSelectedCategory, 1);
-                    }
-                } else {
-                    alert('批量添加失败: ' + data.message);
+                try {
+                    const response = await fetch('/api/images', { method: 'POST', body: formData });
+                    const data = await response.json();
+                    if (data.status === 'success') successCount++;
+                    else failCount++;
+                } catch (error) {
+                    failCount++;
+                    console.error('添加图片错误:', batchFiles[i].name, error);
                 }
-            })
-            .catch(error => {
-                document.getElementById('addBatchBtn').innerHTML = '<i class="fas fa-layer-group me-2"></i>批量添加';
-                document.getElementById('addBatchBtn').disabled = false;
-                console.error('批量添加错误:', error);
-                alert('批量添加过程中发生错误: ' + error.message);
-            });
+            }
+
+            addBatchBtn.innerHTML = '<i class="fas fa-layer-group me-2"></i>批量添加';
+            addBatchBtn.disabled = false;
+
+            alert(`批量添加完成！成功: ${successCount}, 失败: ${failCount}`);
+            resetManageUpload();
+
+            currentCategoryPage = 1;
+            loadCategories(1);
+            loadStats();
+            loadClasses();
+
+            if (currentSelectedCategory) {
+                loadCategoryImages(currentSelectedCategory, 1);
+            }
         }
         function handleFileSelect(file) {
             if (!file.type.match('image.*')) {
@@ -1756,118 +1640,6 @@
                 }
             });
         }
-        function displayImagesByCategory(images) {
-            const imageList = document.getElementById('imageList');
-
-            if (images.length === 0) {
-                imageList.innerHTML = '<tr><td colspan="5" class="text-center">暂无图片数据</td></tr>';
-                return;
-            }
-
-            // 按类别分组
-            const categories = {};
-            images.forEach(image => {
-                const category = image.class || '未分类';
-                if (!categories[category]) {
-                    categories[category] = [];
-                }
-                categories[category].push(image);
-            });
-
-            // 生成分类显示
-            let html = '';
-            Object.keys(categories).forEach(category => {
-                html += `
-                    <tr class="folder-item">
-                        <td colspan="5" class="folder-header" onclick="toggleFolder('${category}')">
-                            <i class="fas fa-folder me-2"></i>
-                            <strong>${category}</strong>
-                            <span class="badge bg-secondary ms-2">${categories[category].length} 个文件</span>
-                            <i class="fas fa-chevron-down float-end"></i>
-                        </td>
-                    </tr>
-                    <tr class="folder-content" id="folder-${category}" style="display: none;">
-                        <td colspan="5">
-                            <div class="table-responsive">
-                                <table class="table table-sm table-borderless mb-0">
-                                    <tbody>
-                `;
-
-                categories[category].forEach(image => {
-                    const fileSize = image.filesize ? (image.filesize / 1024).toFixed(1) + ' KB' : '未知';
-                    const status = image.exists ?
-                        '<span class="badge bg-success">正常</span>' :
-                        '<span class="badge bg-danger">文件丢失</span>';
-
-                    html += `
-                        <tr class="file-item">
-                            <td>
-                                <a href="javascript:void(0)" onclick="previewImage('${image.id}')"
-                                   class="text-decoration-none" title="点击预览">
-                                    <i class="fas fa-file-image me-2"></i>${image.filename}
-                                </a>
-                            </td>
-                            <td><span class="badge bg-primary">${image.class}</span></td>
-                            <td>${fileSize}</td>
-                            <td>${status}</td>
-                            <td class="action-buttons">
-                                <button class="btn btn-sm btn-outline-danger" onclick="deleteImage('${image.id}')">
-                                    <i class="fas fa-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                    `;
-                });
-
-                html += `
-                                    </tbody>
-                                </table>
-                            </div>
-                        </td>
-                    </tr>
-                `;
-            });
-
-            imageList.innerHTML = html;
-        }
-        function toggleFolder(category) {
-            const folder = document.getElementById(`folder-${category}`);
-            const icon = folder.previousElementSibling.querySelector('.fa-chevron-down');
-
-            if (folder.style.display === 'none') {
-                folder.style.display = 'table-row';
-                icon.className = 'fas fa-chevron-up float-end';
-            } else {
-                folder.style.display = 'none';
-                icon.className = 'fas fa-chevron-down float-end';
-            }
-        }
-        // 修改loadImageList函数支持分页
-        function loadImageList(page = 1) {
-            const imageList = document.getElementById('imageList');
-            const loadingImages = document.getElementById('loadingImages');
-
-            imageList.innerHTML = '';
-            loadingImages.style.display = 'block';
-
-            fetch(`/api/images?page=${page}&per_page=${perPage}`)
-                .then(response => response.json())
-                .then(data => {
-                    loadingImages.style.display = 'none';
-                    currentPage = page;
-
-                    if (data.status === 'success') {
-                        updatePagination(data);
-                        displayImagesByCategory(data.images);
-                    } else {
-                        imageList.innerHTML = '<tr><td colspan="5" class="text-center text-danger">加载失败: ' + data.message + '</td></tr>';
-                    }
-                })
-                .catch(error => {
-                    loadingImages.style.display = 'none';
-                    imageList.innerHTML = '<tr><td colspan="5" class="text-center text-danger">加载失败: ' + error.message + '</td></tr>';
-                });
-        }
         // 移除现有遮罩的辅助函数
         function removeExistingBackdrops() {
             const backdrops = document.querySelectorAll('.modal-backdrop');
@@ -1948,98 +1720,6 @@
             img.src = imageUrl;
         }
 
-        // 更新分页控件
-        function updatePagination(data) {
-            const pagination = document.getElementById('pagination');
-            const paginationInfo = document.getElementById('paginationInfo');
-            const totalImages = document.getElementById('totalImages');
-
-            totalImages.textContent = data.total;
-
-            const startItem = (data.page - 1) * data.per_page + 1;
-            const endItem = Math.min(data.page * data.per_page, data.total);
-            paginationInfo.textContent = `第 ${startItem}-${endItem} 条`;
-
-            pagination.innerHTML = '';
-
-            // 上一页
-            const prevLi = document.createElement('li');
-            prevLi.className = `page-item ${data.page === 1 ? 'disabled' : ''}`;
-            prevLi.innerHTML = `<a class="page-link" href="javascript:void(0)" onclick="loadImageList(${data.page - 1})">上一页</a>`;
-            pagination.appendChild(prevLi);
-
-            // 页码
-            for (let i = 1; i <= data.total_pages; i++) {
-                const pageLi = document.createElement('li');
-                pageLi.className = `page-item ${i === data.page ? 'active' : ''}`;
-                pageLi.innerHTML = `<a class="page-link" href="javascript:void(0)" onclick="loadImageList(${i})">${i}</a>`;
-                pagination.appendChild(pageLi);
-            }
-
-            // 下一页
-            const nextLi = document.createElement('li');
-            nextLi.className = `page-item ${data.page === data.total_pages ? 'disabled' : ''}`;
-            nextLi.innerHTML = `<a class="page-link" href="javascript:void(0)" onclick="loadImageList(${data.page + 1})">下一页</a>`;
-            pagination.appendChild(nextLi);
-        }
-        // 修复删除图片函数
-        function deleteImage(imageId) {
-            if (!confirm('确定要删除这张图片吗？此操作不可撤销。')) {
-                return;
-            }
-
-            console.log('开始删除图片:', imageId);
-
-            // 对imageId进行URL编码
-            const encodedImageId = encodeURIComponent(imageId);
-            console.log('编码后的图片ID:', encodedImageId);
-
-            // 显示加载状态
-            const originalButtonText = event.target.innerHTML;
-            event.target.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
-            event.target.disabled = true;
-
-            fetch(`/api/images/${encodedImageId}`, {
-                method: 'DELETE'
-            })
-            .then(response => {
-                console.log('响应状态:', response.status);
-                if (!response.ok) {
-                    // 尝试解析错误信息
-                    return response.json().then(errorData => {
-                        throw new Error(errorData.message || `HTTP ${response.status}`);
-                    }).catch(() => {
-                        throw new Error(`HTTP ${response.status}`);
-                    });
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.status === 'success') {
-                    showAlert('图片删除成功', 'success');
-                    // 刷新当前视图
-                    setTimeout(() => {
-                        if (currentSelectedCategory) {
-                            loadCategoryImages(currentSelectedCategory, currentImagePage);
-                        } else {
-                            loadCategories(currentCategoryPage);
-                        }
-                        loadStats();
-                    }, 500);
-                } else {
-                    showAlert('图片删除失败: ' + data.message, 'danger');
-                }
-            })
-            .catch(error => {
-                console.error('删除图片错误:', error);
-                showAlert('删除失败: ' + error.message, 'danger');
-            })
-            .finally(() => {
-                // 恢复按钮状态
-                event.target.innerHTML = originalButtonText;
-                event.target.disabled = false;
-            });
-        }
 
         function initializeDatabase() {
             // 关闭模态框
@@ -2060,7 +1740,7 @@
 
                 if (data.status === 'success') {
                     alert(data.message);
-                    loadImageList();
+                    loadCategories(1);
                     loadStats();
                 } else {
                     alert('初始化失败: ' + data.message);
