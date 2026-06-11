@@ -34,3 +34,6 @@ experiments/**/cache*/
 deploy_package/
 deploy_package*.zip
 deploy_package*.tar.gz
+
+# Keep demo_gallery for demo mode
+!demo_gallery/
