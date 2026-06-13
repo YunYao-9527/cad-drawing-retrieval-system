@@ -6,10 +6,13 @@ WORKDIR /app
 COPY requirements-demo.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code (only what demo needs)
+# Copy application code
 COPY demo_main.py .
+COPY create_demo_images.py .
 COPY templates/ templates/
-COPY demo_gallery/ demo_gallery/
+
+# Generate demo images during build
+RUN python create_demo_images.py
 
 # Set environment variables
 ENV APP_HOST=0.0.0.0
@@ -17,4 +20,4 @@ ENV GALLERY_DIR=./demo_gallery
 
 EXPOSE 5000
 
-CMD ["python", "demo_main.py"]
+CMD ["sh", "-c", "python demo_main.py"]
