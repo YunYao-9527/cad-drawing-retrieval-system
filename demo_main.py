@@ -148,7 +148,12 @@ def create_demo_app() -> FastAPI:
     async def search(
         image: UploadFile = File(...),
         top_k: int = Form(10),
-        **_kwargs,
+        use_cleaning: str | None = Form(None),
+        use_masked_pooling: str | None = Form(None),
+        enable_structure_rerank: str | None = Form(None),
+        use_ocr_text: str | None = Form(None),
+        enable_text_fusion: str | None = Form(None),
+        text_fusion_strategy: str | None = Form(None),
     ):
         """Return random results from the catalog (demo mode - no ML inference)."""
         if not IMAGE_CATALOG:
