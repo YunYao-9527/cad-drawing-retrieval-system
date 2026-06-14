@@ -8,11 +8,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY demo_main.py .
-COPY create_demo_images.py .
 COPY templates/ templates/
 
-# Generate demo images during build
-RUN python create_demo_images.py
+# Copy real demo images (104 images from 20 categories)
+COPY demo_gallery/ demo_gallery/
 
 # Set environment variables
 ENV APP_HOST=0.0.0.0
