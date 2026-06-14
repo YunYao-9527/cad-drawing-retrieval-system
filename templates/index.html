@@ -284,6 +284,31 @@
             border-color: var(--primary-color);
         }
 
+        /* 示例图片卡片 */
+        .example-card {
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 2px solid transparent;
+        }
+        .example-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            border-color: var(--primary-color);
+        }
+        .example-card img {
+            height: 120px;
+            object-fit: contain;
+            width: 100%;
+            background: #f8f9fa;
+            border-radius: 8px 8px 0 0;
+        }
+        .example-card .card-body {
+            padding: 8px;
+        }
+        .example-card .badge {
+            font-size: 0.7rem;
+        }
+
         /* 添加上传预览区域的提示文字 */
         .preview-container h5::after {
             content: "（点击图片可预览）";
@@ -376,6 +401,19 @@
                                             <li>点击"开始检索"按钮</li>
                                             <li>查看检索结果，点击图片可查看详情</li>
                                         </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 示例图片区域 -->
+                        <div class="card mt-4" id="examplesSection">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-images me-2"></i>快速体验 — 点击示例图片直接检索</h5>
+                                <div class="row" id="examplesGrid">
+                                    <div class="col-12 text-center">
+                                        <div class="spinner-border spinner-border-sm" role="status"></div>
+                                        <span class="ms-2 text-muted">加载示例中...</span>
                                     </div>
                                 </div>
                             </div>
@@ -640,6 +678,8 @@
             // 加载分类列表
             loadCategories();
             optimizeImageLoading();
+            // 加载示例图片
+            loadExamples();
 
            // === 模态框关闭后清理蒙版 ===
             document.addEventListener('hidden.bs.modal', function() {
@@ -1618,6 +1658,66 @@
                     console.error('加载类别失败:', error);
                 });
         }
+        // 加载示例图片
+        function loadExamples() {
+            fetch('/api/examples')
+                .then(r => r.json())
+                .then(data => {
+                    const grid = document.getElementById('examplesGrid');
+                    if (data.status !== 'success' || !data.examples.length) {
+                        grid.innerHTML = '<div class="col-12 text-muted">暂无示例</div>';
+                        return;
+                    }
+                    grid.innerHTML = data.examples.map(ex => `
+                        <div class="col-md-3 col-sm-6 mb-3">
+                            <div class="card example-card" onclick="searchByExample('${ex.id.replace(/'/g, "\\'")}')">
+                                <img src="/image/${encodeURIComponent(ex.id)}?thumb=true"
+                                     class="card-img-top" alt="${ex.filename}"
+                                     loading="lazy"
+                                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPuWbvueJh+WKoOi9vTwvdGV4dD48L3N2Zz4=';">
+                                <div class="card-body text-center">
+                                    <span class="badge bg-primary">${ex.class}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                })
+                .catch(err => {
+                    console.error('加载示例失败:', err);
+                    document.getElementById('examplesGrid').innerHTML =
+                        '<div class="col-12 text-muted">示例加载失败</div>';
+                });
+        }
+
+        // 用示例图检索
+        function searchByExample(imageId) {
+            const topK = parseInt(document.getElementById('topK').value);
+            document.getElementById('loadingSpinner').style.display = 'block';
+            document.getElementById('resultsContainer').style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('image_id', imageId);
+            formData.append('top_k', topK);
+
+            fetch('/search_by_id', {
+                method: 'POST',
+                body: formData
+            })
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('loadingSpinner').style.display = 'none';
+                if (data.status === 'success') {
+                    displayResults(data.results);
+                } else {
+                    alert('检索失败: ' + data.message);
+                }
+            })
+            .catch(error => {
+                document.getElementById('loadingSpinner').style.display = 'none';
+                alert('检索出错: ' + error.message);
+            });
+        }
+
         // 修改类别选择事件
         function bindClassEvents() {
             const classSelect = document.getElementById('imageClass');

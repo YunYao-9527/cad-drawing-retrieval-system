@@ -217,6 +217,83 @@ def create_demo_app() -> FastAPI:
             "results": results,
         }
 
+    @app.get("/api/examples")
+    async def get_examples():
+        """Return one image per category for the demo UI."""
+        seen = set()
+        examples = []
+        for item in IMAGE_CATALOG:
+            cat = item["class"]
+            if cat not in seen:
+                seen.add(cat)
+                examples.append({
+                    "id": item["id"],
+                    "filename": item["filename"],
+                    "class": cat,
+                })
+        random.shuffle(examples)
+        return {"status": "success", "examples": examples[:8]}
+
+    @app.post("/search_by_id")
+    async def search_by_id(
+        image_id: str = Form(...),
+        top_k: int = Form(10),
+    ):
+        """Search by gallery image ID (for demo examples)."""
+        if not IMAGE_CATALOG:
+            return {"status": "error", "message": "No images in gallery"}
+
+        query_item = None
+        for item in IMAGE_CATALOG:
+            if item["id"] == image_id:
+                query_item = item
+                break
+        if not query_item:
+            return {"status": "error", "message": f"Image not found: {image_id}"}
+
+        # Return same-category results first, then others
+        same_cat = [i for i in IMAGE_CATALOG if i["class"] == query_item["class"] and i["id"] != image_id]
+        other_cat = [i for i in IMAGE_CATALOG if i["class"] != query_item["class"]]
+        random.shuffle(same_cat)
+        random.shuffle(other_cat)
+        candidates = same_cat + other_cat
+
+        k = min(top_k, len(candidates))
+        base = random.uniform(0.85, 0.98)
+        results = []
+        for rank, item in enumerate(candidates[:k], 1):
+            sim = max(0.3, base - (rank - 1) * random.uniform(0.02, 0.06))
+            results.append({
+                "id": item["id"],
+                "filename": item["filename"],
+                "class": item["class"],
+                "similarity": round(sim, 4),
+                "distance": round(1.0 - sim, 4),
+                "rank": rank,
+            })
+
+        return {
+            "status": "success",
+            "query_image": query_item["filename"],
+            "experiment_flags": {
+                "use_cleaning": False,
+                "use_masked_pooling": False,
+                "enable_structure_rerank": False,
+                "use_ocr_text": False,
+                "enable_text_fusion": False,
+                "text_fusion_strategy": "demo",
+            },
+            "query_analysis": {
+                "mask_coverage": 1.0,
+                "removed_regions": 0,
+                "ocr_text": "",
+                "ocr_source": "demo",
+                "title_block_entries": [],
+                "title_block_fields": {},
+            },
+            "results": results,
+        }
+
     @app.get("/api")
     async def api_info():
         return {
