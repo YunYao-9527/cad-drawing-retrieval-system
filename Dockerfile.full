@@ -1,0 +1,17 @@
+FROM python:3.11-slim-bookworm
+
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git ca-certificates libgl1 libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt ./
+# Use CPU wheels so a CPU web service does not install the CUDA runtime.
+RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu \
+    && pip install --no-cache-dir -r requirements.txt tqdm
+COPY . .
+RUN mkdir -p models logs qdrant_db
+
+EXPOSE 5000
+CMD ["python", "cloud_start.py"]

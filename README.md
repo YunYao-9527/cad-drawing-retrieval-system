@@ -1,5 +1,7 @@
 # CAD图纸智能检索系统
 
+> [在线项目页](https://yunyao-9527.github.io/cad-drawing-retrieval-system/) · [云端运行说明](DEPLOYMENT_CLOUD.md)
+
 基于CLIP模型的工程图纸智能检索系统，使用向量数据库进行高效相似度搜索。
 
 ## 📋 项目概述
