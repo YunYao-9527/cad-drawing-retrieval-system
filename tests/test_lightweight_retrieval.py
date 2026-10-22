@@ -32,6 +32,10 @@ def test_uploaded_image_uses_actual_features_and_stable_order(tmp_path, monkeypa
     health = client.get('/health').json()
     assert health['clip_loaded'] is False
     assert health['retrieval_method'] == 'ink-density-and-edge-v1'
+    page = client.get('/')
+    assert page.status_code == 200
+    assert 'studio.css' in page.text
+    assert client.get('/static/css/studio.css').status_code == 200
 
 
 def test_invalid_upload_and_directory_escape_are_rejected(tmp_path, monkeypatch):

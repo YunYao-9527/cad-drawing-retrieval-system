@@ -123,7 +123,7 @@ def create_demo_app() -> FastAPI:
     @app.get("/")
     async def index(request: Request):
         if templates:
-            return templates.TemplateResponse("index.html", {"request": request})
+            return templates.TemplateResponse(request=request, name="index.html", context={})
         return {"message": "Web 界面未配置"}
 
     @app.get("/health")
@@ -483,7 +483,7 @@ def create_demo_app() -> FastAPI:
 def main():
     print("=" * 60)
     print("CAD 图纸检索系统 - 轻量 Demo 模式")
-    print("跳过 PyTorch/CLIP/YOLO，仅提供 Web UI 展示")
+    print("使用真实图像密度与边缘检索，不加载 PyTorch/CLIP/YOLO")
     print("=" * 60)
 
     scan_gallery()
