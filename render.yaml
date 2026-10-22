@@ -2,7 +2,10 @@ services:
   - type: web
     name: cad-drawing-retrieval
     runtime: docker
+    plan: free
     envVars:
       - key: GALLERY_DIR
         value: ./demo_gallery
+      - key: PUBLIC_DEMO
+        value: "1"
     healthCheckPath: /health

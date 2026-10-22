@@ -8,6 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY demo_main.py .
+COPY lightweight_retrieval.py .
 COPY templates/ templates/
 
 # Copy real demo images (104 images from 20 categories)

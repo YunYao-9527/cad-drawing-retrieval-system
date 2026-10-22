@@ -318,7 +318,11 @@
             font-weight: normal;
         }
     </style>
+    <link rel="stylesheet" href="/static/css/studio.css">
 </head>
+<script>
+document.addEventListener('DOMContentLoaded',async()=>{try{const response=await fetch('/health');const state=await response.json();if(state.mode==='lightweight-visual'){const notice=document.createElement('div');notice.className='alert alert-info';notice.style='max-width:1200px;margin:22px auto 0;padding:14px 20px';notice.textContent='当前为轻量图像结构检索：按真实图片密度与边缘相似度排序，不执行 CLIP、OCR 或 YOLO。完整模型与正式实验指标请查看项目文档。';document.body.prepend(notice)}}catch(error){console.warn('状态检查暂不可用')}});
+</script>
 <body>
     <div class="container main-container">
         <!-- 头部 -->

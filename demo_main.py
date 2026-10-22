@@ -1,6 +1,6 @@
 """
 CAD 图纸检索系统 - 轻量 Demo 模式
-跳过 PyTorch/CLIP/YOLO，只用 Pillow 提供 Web UI 展示和模拟检索结果。
+使用 Pillow 图像密度与边缘描述子进行真实轻量检索，不执行 CLIP 模型。
 适用于 Render Free Tier (512MB RAM) 等资源受限环境。
 """
 from __future__ import annotations
@@ -10,6 +10,7 @@ import random
 import time
 import urllib.parse
 from io import BytesIO
+from pathlib import Path
 
 import uvicorn
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
@@ -17,6 +18,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, Response, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from PIL import Image, ImageFile
+from lightweight_retrieval import rank_images
 
 try:
     from starlette.templating import Jinja2Templates
@@ -29,6 +31,14 @@ except ImportError:
 
 IMAGE_CATALOG: list[dict] = []
 GALLERY_DIR = os.environ.get("GALLERY_DIR", "./demo_gallery")
+
+
+def gallery_path(*parts):
+    root = Path(GALLERY_DIR).resolve()
+    target = root.joinpath(*parts).resolve()
+    if not target.is_relative_to(root):
+        raise HTTPException(status_code=400, detail="图片路径不合法")
+    return str(target)
 
 
 def scan_gallery():
@@ -70,8 +80,14 @@ def create_demo_app() -> FastAPI:
     app = FastAPI(
         title="CAD图纸检索系统 (Demo)",
         version="2.1.0-demo",
-        description="CAD 图纸智能检索系统 - 轻量演示模式（无 ML 推理）",
+        description="CAD 图纸轻量结构检索（Pillow 描述子，非 CLIP）",
     )
+
+    @app.middleware("http")
+    async def public_demo_boundary(request, call_next):
+        if os.getenv("PUBLIC_DEMO", "0") == "1" and request.method not in {"GET", "HEAD", "OPTIONS"} and request.url.path not in {"/search", "/search_by_id"}:
+            return JSONResponse(status_code=403, content={"detail": "公开演示仅开放检索，图库管理请在本地运行。"})
+        return await call_next(request)
 
     app.add_middleware(
         CORSMiddleware,
@@ -114,7 +130,9 @@ def create_demo_app() -> FastAPI:
     async def health():
         return {
             "status": "healthy",
-            "mode": "demo",
+            "mode": "lightweight-visual",
+            "retrieval_method": "ink-density-and-edge-v1",
+            "clip_loaded": False,
             "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             "total_images": len(IMAGE_CATALOG),
         }
@@ -135,7 +153,7 @@ def create_demo_app() -> FastAPI:
     async def serve_image(filename: str, thumb: bool = False):
         decoded = urllib.parse.unquote(filename, encoding="utf-8").strip().replace("\\", "/")
         # Try direct path
-        full_path = os.path.join(GALLERY_DIR, decoded.replace("/", os.sep))
+        full_path = gallery_path(decoded.replace("/", os.sep))
         if os.path.isfile(full_path):
             return _thumbnail(full_path) if thumb else FileResponse(full_path)
         # Search catalog
@@ -155,7 +173,7 @@ def create_demo_app() -> FastAPI:
         enable_text_fusion: str | None = Form(None),
         text_fusion_strategy: str | None = Form(None),
     ):
-        """Return random results from the catalog (demo mode - no ML inference)."""
+        """Rank images using their actual visual descriptors."""
         if not IMAGE_CATALOG:
             return {
                 "status": "success",
@@ -179,13 +197,17 @@ def create_demo_app() -> FastAPI:
                 "results": [],
             }
 
-        k = min(top_k, len(IMAGE_CATALOG))
-        sampled = random.sample(IMAGE_CATALOG, k)
-        # Generate descending similarity scores
-        base = random.uniform(0.85, 0.98)
+        content = await image.read(10 * 1024 * 1024 + 1)
+        if len(content) > 10 * 1024 * 1024:
+            raise HTTPException(status_code=413, detail="图片不能超过 10 MB")
+        try:
+            with Image.open(BytesIO(content)) as query:
+                sampled = rank_images(query, IMAGE_CATALOG, top_k)
+        except (OSError, ValueError):
+            raise HTTPException(status_code=400, detail="无法读取该图片") from None
         results = []
         for rank, item in enumerate(sampled, 1):
-            sim = max(0.3, base - (rank - 1) * random.uniform(0.02, 0.06))
+            sim = item['_similarity']
             results.append({
                 "id": item["id"],
                 "filename": item["filename"],
@@ -251,18 +273,11 @@ def create_demo_app() -> FastAPI:
         if not query_item:
             return {"status": "error", "message": f"Image not found: {image_id}"}
 
-        # Return same-category results first, then others
-        same_cat = [i for i in IMAGE_CATALOG if i["class"] == query_item["class"] and i["id"] != image_id]
-        other_cat = [i for i in IMAGE_CATALOG if i["class"] != query_item["class"]]
-        random.shuffle(same_cat)
-        random.shuffle(other_cat)
-        candidates = same_cat + other_cat
-
-        k = min(top_k, len(candidates))
-        base = random.uniform(0.85, 0.98)
+        with Image.open(query_item['filepath']) as query:
+            candidates = rank_images(query, IMAGE_CATALOG, top_k, exclude_id=image_id)
         results = []
-        for rank, item in enumerate(candidates[:k], 1):
-            sim = max(0.3, base - (rank - 1) * random.uniform(0.02, 0.06))
+        for rank, item in enumerate(candidates, 1):
+            sim = item['_similarity']
             results.append({
                 "id": item["id"],
                 "filename": item["filename"],
@@ -312,11 +327,11 @@ def create_demo_app() -> FastAPI:
             class_dist[cls] = class_dist.get(cls, 0) + 1
         return {
             "total_images": len(IMAGE_CATALOG),
-            "device": "CPU (Demo Mode)",
+            "device": "CPU / 图像密度与边缘检索（非 CLIP）",
             "database_path": "in-memory",
             "current_categories": len(classes),
             "total_categories_in_model": len(classes),
-            "feature_dim": 512,
+            "feature_dim": 1024,
             "model_classes": len(classes),
             "class_distribution": class_dist,
         }
@@ -339,8 +354,20 @@ def create_demo_app() -> FastAPI:
     async def add_image(image: UploadFile = File(...), image_class: str = Form(None)):
         if not image.filename:
             raise HTTPException(status_code=400, detail="文件名不能为空")
+        if Path(image.filename).suffix.lower() not in {'.png', '.jpg', '.jpeg', '.bmp', '.tif', '.tiff'}:
+            raise HTTPException(status_code=400, detail="只接受图片文件扩展名")
         image_class = image_class or os.path.splitext(image.filename)[0]
-        class_dir = os.path.join(GALLERY_DIR, image_class)
+        if any(char in image.filename + image_class for char in '/\\') or image_class in {'.', '..'}:
+            raise HTTPException(status_code=400, detail="文件名和分类不能包含目录分隔符")
+        content = await image.read(10 * 1024 * 1024 + 1)
+        if len(content) > 10 * 1024 * 1024:
+            raise HTTPException(status_code=413, detail="图片不能超过 10 MB")
+        try:
+            with Image.open(BytesIO(content)) as uploaded:
+                uploaded.verify()
+        except (OSError, ValueError):
+            raise HTTPException(status_code=400, detail="无法读取该图片") from None
+        class_dir = gallery_path(image_class)
         os.makedirs(class_dir, exist_ok=True)
         target_path = os.path.join(class_dir, image.filename)
         base, ext = os.path.splitext(image.filename)
@@ -348,7 +375,6 @@ def create_demo_app() -> FastAPI:
         while os.path.exists(target_path):
             target_path = os.path.join(class_dir, f"{base}_{counter}{ext}")
             counter += 1
-        content = await image.read()
         with open(target_path, "wb") as f:
             f.write(content)
         rel_path = os.path.relpath(target_path, GALLERY_DIR).replace("\\", "/")
