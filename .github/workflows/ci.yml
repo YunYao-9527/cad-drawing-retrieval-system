@@ -9,4 +9,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements-demo.txt pytest httpx
-      - run: pytest tests/test_lightweight_retrieval.py -q
+      - run: python -m pytest tests/test_lightweight_retrieval.py -q
