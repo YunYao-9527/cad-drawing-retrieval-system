@@ -133,6 +133,7 @@ def create_demo_app() -> FastAPI:
             "mode": "lightweight-visual",
             "retrieval_method": "ink-density-and-edge-v1",
             "clip_loaded": False,
+            "public_demo": os.getenv("PUBLIC_DEMO", "0") == "1",
             "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             "total_images": len(IMAGE_CATALOG),
         }

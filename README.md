@@ -2,6 +2,8 @@
 
 > [在线项目页](https://yunyao-9527.github.io/cad-drawing-retrieval-system/) · [云端运行说明](DEPLOYMENT_CLOUD.md)
 
+**[打开在线系统](https://yunyao-cad-visual.onrender.com/)**：上传图片或选择图库样例，执行真实图像密度与边缘特征检索，结果确定且不返回查询图本身。公开 Free 实例不加载 CLIP，不适用完整模型的实验指标；首次唤醒可能需要等待。图库管理写入已关闭。
+
 基于CLIP模型的工程图纸智能检索系统，使用向量数据库进行高效相似度搜索。
 
 ## 📋 项目概述

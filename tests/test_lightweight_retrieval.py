@@ -36,6 +36,9 @@ def test_uploaded_image_uses_actual_features_and_stable_order(tmp_path, monkeypa
     assert page.status_code == 200
     assert 'studio.css' in page.text
     assert client.get('/static/css/studio.css').status_code == 200
+    assert client.get('/static/vendor/bootstrap/bootstrap.min.css').status_code == 200
+    assert client.get('/static/vendor/bootstrap/bootstrap.bundle.min.js').status_code == 200
+    assert client.get('/static/vendor/fontawesome/webfonts/fa-solid-900.woff2').status_code == 200
 
 
 def test_invalid_upload_and_directory_escape_are_rejected(tmp_path, monkeypatch):
@@ -49,6 +52,7 @@ def test_invalid_upload_and_directory_escape_are_rejected(tmp_path, monkeypatch)
     monkeypatch.setenv('PUBLIC_DEMO', '1')
     assert client.post('/api/initialize').status_code == 403
     assert client.get('/health').status_code == 200
+    assert client.get('/health').json()['public_demo'] is True
 
 
 def test_gallery_query_excludes_itself(tmp_path, monkeypatch):
